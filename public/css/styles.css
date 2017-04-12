@@ -1,3 +1,17 @@
+/*
+    INDEX OF STYLES
+    1. Mobile
+        1.1 Mobile Burger
+        1.2 Menu
+        1.3 Banner
+        1.4 Section: description
+        1.5 Section: testimony
+        1.6 Section: business
+    2. Tablet
+    3. Desktop/laptop
+    4. Desktop large/ TV
+ */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +20,16 @@
 }
 
 .container {
-
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-/*################### MOBILE ############################*/
+/* 1. ################### MOBILE ############################*/
 body {
-    background: red;
 }
 
-/* Mobile Burger-->*/
+/* 1. 1 Mobile Burger-->*/
 .mobile-bar {
     background: #941B11;
     width: 100%;
@@ -27,7 +42,7 @@ body {
     font-size: 20px;
 }
 
-/* Menu-->*/
+/* 1.2 Menu-->*/
 header {
     width: 100%;
 }
@@ -57,7 +72,7 @@ header nav ul li a:hover {
     color: #ffffff;
 }
 
-/* Banner-->*/
+/* 1.3 Banner-->*/
 header .banner {
     /*noinspection CssUnknownTarget*/
     background: url("/img/banner01.jpg");
@@ -86,7 +101,90 @@ header .banner .banner-text p {
     display: none;
 }
 
-/*################## TABLET ############################*/
+/* 1.4 Section Description-->*/
+.section-description {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-description .description-service h2 {
+    color: #333333;
+}
+
+.section-description .description-service p{
+    margin-top: 15px;
+    color: #333333;
+}
+
+.section-description .description-service hr {
+    width: 100px;
+    height: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background: #941B11;
+    margin-top: 15px;
+}
+
+.section-description .description-features .feature-item{
+    border: 2px solid #941B11;
+    border-radius: 3px;
+    padding: 30px 20px 20px 20px;
+    margin-top: 35px;
+}
+.section-description .description-features .feature-item h3 {
+    color: #941B11;
+}
+.section-description .description-features .feature-item p {
+    margin-top: 15px;
+}
+
+/* 1.5 Section Description-->*/
+.section-testimony{
+    margin-top: 30px;
+    background: url("/img/banner01.jpg");
+    background-size: cover;
+    text-align: center;
+}
+.section-testimony .background-red{
+    width: 100%;
+    height: 100%;
+    background: rgba(148, 27, 17, 0.8);
+    padding: 20px;
+
+}
+.section-testimony .font-quote{ /*Comillas*/
+    display: block;
+    background: black;
+    width: 50px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-testimony p{
+    margin-top: 15px;
+    color: white;
+}
+
+.section-testimony figure img{
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.section-testimony p span{
+    display: block;
+    font-weight: bold;
+}
+
+/* 1.6 Section Business-->*/
+
+
+/* 1.7 Section Business-->*/
+
+
+/* 1.8 Section Business-->*/
+
+/* 2. ################## TABLET ############################*/
 @media (min-width: 360px) {
     body {
         background: blue;

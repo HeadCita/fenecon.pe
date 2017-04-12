@@ -30,11 +30,12 @@ block content
             .banner-text
                 h1="Aprende a manejar con nosotros"
                 p="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem."
-    .section-description
+    .section-description.container
         .description-service
             h2="Brevetes Perú"
             p="Escuela de Conductores Integral autorizada por el Ministerio de Transporte y Comunicaciones(MTC) y por la Gerencia de Transporte Urbano(GTU) para capacitar a los conductores a nivel nacional."
-        .descriptiom-features
+            hr
+        .description-features
             .feature-item
                 span(class="TODO: font-instructor")
                 h3="Instructores Calificados"
@@ -49,12 +50,16 @@ block content
                 p="Antes de conducir por las calles, nuestros alumnos practican en nuestro moderno simulador de manejo."
 
     .section-testimony
-        span(class="TODO: font-quote")
-        p="Es una excelente escuela con buenos profesores, muy profesionales. Con su orientación académica logré obtener mi brevete"
-        figure
-            img(src="/img/testimony/1.png" alt="Leticia Bolivar")
-        p="Leticia Bolivar Estudiante"
-        .carousel-controls
+        .background-red
+            .container
+                span(class="TODO: font-quote")
+                p="Es una excelente escuela con buenos profesores, muy profesionales. Con su orientación académica logré obtener mi brevete"
+                figure
+                    img(src="/img/testimony/1.jpg" alt="Jessica Alba")
+                p
+                    span Jessica Alba
+                    | Estudiante
+                .carousel-controls
     .section-business
         //TODO: Slider
     .section-contact
