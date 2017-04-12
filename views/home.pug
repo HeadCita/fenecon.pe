@@ -1,11 +1,68 @@
-//
-   Created by joseph on 12/04/17.
-doctype html
-html(lang="es")
-    head
-        meta(charset="uft-8")
-        meta(name="viewport", content="width=device-width,initial-scale=1")
-        title="Global Car SAC"
-        link(rel="stylesheet" href="/css/styles.css")
-    body
-        h1="Home-Global Car SAC"
+extends templates/template-home
+block content
+    .mobile-bar
+        a(href="#" class="btn-menu")
+            span(class="TODO: burger font") ##
+            | Global Car SAC
+    header
+        .logo
+            figure
+                img(href="/img/logo.png" alt="Global Car")
+        nav(class="menu-nav")
+            ul
+                li
+                    a(href="/") Inicio
+                li
+                    a(href="/nosotros") Nosotros
+                li
+                    a(href="/cursos") Cursos
+                li
+                    a(href="/categorías") Categorías
+                li
+                    a(href="/locales") Locales
+                li
+                    a(href="/galeria") Galería
+                li
+                    a(href="clientes") Clientes
+                li
+                    a(href="contacto") Contacto
+        .banner-text
+            h1="Aprende a manejar con nosotros"
+            p="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem."
+    .section-description
+        .description-service
+            h2="Brevetes Perú"
+            p="Escuela de Conductores Integral autorizada por el Ministerio de Transporte y Comunicaciones(MTC) y por la Gerencia de Transporte Urbano(GTU) para capacitar a los conductores a nivel nacional."
+        .descriptiom-features
+            .feature-item
+                span(class="TODO: font-instructor")
+                h3="Instructores Calificados"
+                p="Nuestros instructores cuentan con amplia experiencia teórica y práctica en los diversos niveles que el alumno necesite."
+            .feature-item
+                span(class="TODO: font-instructor")
+                h3="Clases Personalizadas"
+                p="Cada alumno es evaluado y tiene un programa espcializado de entrenamiento teórico y práctico."
+            .feature-item
+                span(class="TODO: font-instructor")
+                h3="Simuladores de Manejo"
+                p="Antes de conducir por las calles, nuestros alumnos practican en nuestro moderno simulador de manejo."
+
+    .section-testimony
+        span(class="TODO: font-quote")
+        p="Es una excelente escuela con buenos profesores, muy profesionales. Con su orientación académica logré obtener mi brevete"
+        figure
+            img(src="/img/testimony/1.png" alt="Leticia Bolivar")
+        p="Leticia Bolivar Estudiante"
+        .carousel-controls
+    .section-business
+        //TODO: Slider
+    .section-contact
+        .contact-phone
+            span(class="TODO: font-cellphone")
+            h4="Celular"
+            p="999 999 999 RPM: # 999 999 999"
+        .contact-email
+            span(class="TODO: font-email")
+                h4="Email"
+                p="contacto@globalcar.pe"
+        .contact-maps
