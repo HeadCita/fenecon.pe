@@ -1,38 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
-.container{
+
+.container {
 
 }
 
 /*################### MOBILE ############################*/
-body{
+body {
     background: red;
 }
-/* Mobile menu-->*/
-.mobile-bar{
+
+/* Mobile Burger-->*/
+.mobile-bar {
     background: #941B11;
     width: 100%;
     padding: 10px 10px;
 }
-.mobile-bar a{
+
+.mobile-bar a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
 }
 
-/* Mobile menu-->*/
-header{
+/* Menu-->*/
+header {
     width: 100%;
 }
-header .logo{
+
+header .logo {
     display: none;
 }
 
-header nav{
+header nav {
     background: #941B11;
     width: 80%;
     height: 100%;
@@ -40,36 +44,64 @@ header nav{
     left: -100%;
     transition: all .4s;
 }
-header nav ul li a{
+
+header nav ul li a {
     display: block;
     text-decoration: none;
     color: #ffffff;
     padding: 10px;
 }
 
-header nav ul li a:hover{
-    background: #EFB317 ;
+header nav ul li a:hover {
+    background: #EFB317;
     color: #ffffff;
 }
 
+/* Banner-->*/
+header .banner {
+    /*noinspection CssUnknownTarget*/
+    background: url("/img/banner01.jpg");
+    background-size: cover;
+    padding: 10px;
+}
 
+header .banner .banner-text {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    padding: 5px;
+    background: rgba(239, 179, 23, .8);
+    border-radius: 50%;
+}
 
+header .banner .banner-text h1 {
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
 
+header .banner .banner-text p {
+    display: none;
+}
 
 /*################## TABLET ############################*/
-@media (min-width: 360px){
-    body{
+@media (min-width: 360px) {
+    body {
         background: blue;
     }
 }
+
 /*################## DESKTOP ###########################*/
-@media (min-width: 768px){
-    body{
+@media (min-width: 768px) {
+    body {
         background: yellow;
     }
 }
+
 /*#################### TV #############################*/
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 
 }
 
