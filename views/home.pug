@@ -2,7 +2,7 @@ extends templates/template-home
 block content
     .mobile-bar
         a(href="#" class="btn-menu")
-            span(class="TODO: burger font") ##
+            span(class="fa fa-bars")
             | Global Car SAC
     header
         .logo
@@ -52,7 +52,7 @@ block content
     .section-testimony
         .background-red
             .container
-                span(class="TODO: font-quote")
+                span(class="fa fa-quote-left")
                 p="Es una excelente escuela con buenos profesores, muy profesionales. Con su orientación académica logré obtener mi brevete"
                 figure
                     img(src="/img/testimony/1.jpg" alt="Jessica Alba")
@@ -63,12 +63,15 @@ block content
     .section-business
         //TODO: Slider
     .section-contact
-        .contact-phone
-            span(class="TODO: font-cellphone")
-            h4="Celular"
-            p="999 999 999 RPM: # 999 999 999"
-        .contact-email
-            span(class="TODO: font-email")
-                h4="Email"
-                p="contacto@globalcar.pe"
-        .contact-maps
+        .container
+            .contact-item.contact-phone
+                span(class="fa fa-mobile")
+                .contact-item-data
+                    h4="Celular"
+                    p="999 999 999 RPM: # 999 999 999"
+            .contact-item.contact-email
+                span(class="fa fa-envelope")
+                .contact-item-data
+                    h4="Email"
+                    p="contacto@globalcar.pe"
+            .contact-maps

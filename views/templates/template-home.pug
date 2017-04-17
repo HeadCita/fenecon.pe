@@ -5,13 +5,23 @@ html(lang="es")
     head
         meta(charset="uft-8")
         meta(name="viewport", content="width=device-width,initial-scale=1")
-        title="Global Car SAC"
+        title Global Car SAC
         link(href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet")
+        link(href="/css/font-awesome/css/font-awesome.min.css" rel="stylesheet")
         link(rel="stylesheet" href="/css/styles.css")
     body
+        a.float-btn-container
+            span(href="#" class="fa fa-angle-up")
         block content
         footer
-            .footer-content
             .footer-social
-            p= "Valle del Agro &copy; 2017. Privacy Policy | Desarrollado por HeadCita"
+                span.fb.social-item
+                span.tw.social-item
+                span.lin.social-item
+            .footer-links
+                figure.mtc
+                    img(src="/img/footer/mtc.png" alt="Autorizado por el Ministerio de Trasportes y Comunicaciones")
+                figure.google-play
+                    img(src="/img/footer/google-play.png" alt="Descarga nuestra app disponible en la Google Play")
+            p Global Car SAC &copy; 2017. Privacy Policy | Desarrollado por HeadCita
         script(src="/js/source.js")

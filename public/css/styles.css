@@ -1,5 +1,5 @@
 /*
-    INDEX OF STYLES
+    INDEX OF STYLES | HeadCita
     1. Mobile
         1.1 Mobile Burger
         1.2 Menu
@@ -7,6 +7,9 @@
         1.4 Section: description
         1.5 Section: testimony
         1.6 Section: business
+        1.7 Section: contact
+        1.8  Footer
+        1.9  Float Button.
     2. Tablet
     3. Desktop/laptop
     4. Desktop large/ TV
@@ -40,6 +43,11 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    outline: none;
+}
+
+.mobile-bar a span{
+    margin-right: 10px;
 }
 
 /* 1.2 Menu-->*/
@@ -52,7 +60,7 @@ header .logo {
 }
 
 header nav {
-    background: #941B11;
+    background: #eeeeee;
     width: 80%;
     height: 100%;
     position: fixed;
@@ -63,7 +71,8 @@ header nav {
 header nav ul li a {
     display: block;
     text-decoration: none;
-    color: #ffffff;
+    font-weight: 700;
+    color: #941B11;
     padding: 10px;
 }
 
@@ -153,13 +162,12 @@ header .banner .banner-text p {
     padding: 20px;
 
 }
-.section-testimony .font-quote{ /*Comillas*/
+.section-testimony .fa.fa-quote-left{ /*Comillas*/
     display: block;
-    background: black;
-    width: 50px;
-    height: 50px;
+    color: white;
     margin-right: auto;
     margin-left: auto;
+    font-size: 30px;
 }
 .section-testimony p{
     margin-top: 15px;
@@ -177,12 +185,96 @@ header .banner .banner-text p {
 }
 
 /* 1.6 Section Business-->*/
+.section-business{
+    background: black;
+    height: 50px;
+}
+/* 1.7 Section Contact-->*/
+.section-contact{
+    padding: 30px 0;
+    background: #F0F0F0;
+}
+.section-contact .container{
+    display: flex;
+    flex-direction: column;
+}
+.section-contact .container .contact-item{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+.section-contact .container .contact-item span.fa-mobile{
+    font-size: 50px;
+    color: #941B11;
+}
+.section-contact .container .contact-item span.fa-envelope{
+    font-size: 30px;
+    color: #941B11;
+}
+.section-contact .container .contact-item .contact-item-data{
+    width: 170px;
+}
 
 
-/* 1.7 Section Business-->*/
+/* 1.8 Footer-->*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background: #696969;
+}
+
+footer .footer-social{
+    display: flex;
+    justify-content: center;
+}
+footer .social-item{
+    margin: 0 10px;
+}
+footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-links figure{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+footer .footer-links figure img{
+    display: block;
+    width: 100%;
+}
+footer p{
+    padding: 10px;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* 1.9 Float Button-->*/
+a.float-btn-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background: #EFB317;
+}
+a span.fa.fa-angle-up{
+    padding: 5px 0;
+    display: block;
+    color: white;
+    font-size: 30px;
+}
 
 
-/* 1.8 Section Business-->*/
+
+
 
 /* 2. ################## TABLET ############################*/
 @media (min-width: 360px) {
