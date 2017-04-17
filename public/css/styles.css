@@ -1,15 +1,18 @@
 /*
     INDEX OF STYLES | HeadCita
     1. Mobile
-        1.1 Mobile Burger
-        1.2 Menu
-        1.3 Banner
-        1.4 Section: description
-        1.5 Section: testimony
-        1.6 Section: business
-        1.7 Section: contact
-        1.8  Footer
-        1.9  Float Button.
+        1.1 Home
+            1.1.1 Mobile Burger
+            1.1.2 Menu
+            1.1.3 Banner
+            1.1.4 Section: description
+            1.1.5 Section: testimony
+            1.1.6 Section: business
+            1.1.7 Section: contact
+            1.1.8  Footer
+            1.1.9  Float Button.
+        1.2 About US
+            1.2.1 Section: description => (1.1.4)
     2. Tablet
     3. Desktop/laptop
     4. Desktop large/ TV
@@ -30,9 +33,11 @@
 
 /* 1. ################### MOBILE ############################*/
 body {
+    background: #fafafa;
+    color: #333333;;
 }
-
-/* 1. 1 Mobile Burger-->*/
+/* 1.1 ========Home========>*/
+/* 1.1.1 Mobile Burger-->*/
 .mobile-bar {
     background: #941B11;
     width: 100%;
@@ -50,7 +55,7 @@ body {
     margin-right: 10px;
 }
 
-/* 1.2 Menu-->*/
+/* 1.1.2 Menu-->*/
 header {
     width: 100%;
 }
@@ -76,20 +81,34 @@ header nav ul li a {
     padding: 10px;
 }
 
+header nav ul li a span{
+    margin-left: 10px;
+}
+
 header nav ul li a:hover {
     background: #EFB317;
     color: #ffffff;
 }
+header nav ul li ul.courses-menu{
+    display: none;
+}
+header nav ul li:hover ul.courses-menu{
+    display: block;
+}
 
-/* 1.3 Banner-->*/
-header .banner {
+header nav ul li:hover ul.courses-menu li a {
+    padding-left:  30px;
+}
+
+/* 1.1.3 Banner-->*/
+section.banner {
     /*noinspection CssUnknownTarget*/
     background: url("/img/banner01.jpg");
     background-size: cover;
     padding: 10px;
 }
 
-header .banner .banner-text {
+section.banner .banner-text {
     display: flex;
     align-items: center;
     width: 160px;
@@ -100,29 +119,24 @@ header .banner .banner-text {
     border-radius: 50%;
 }
 
-header .banner .banner-text h1 {
+section.banner .banner-text h1 {
     font-size: 15px;
     text-align: center;
     color: #fff;
 }
 
-header .banner .banner-text p {
+section.banner .banner-text p {
     display: none;
 }
 
-/* 1.4 Section Description-->*/
+/* 1.1.4 Section Description-->*/
 .section-description {
     text-align: center;
     margin-top: 30px;
 }
 
-.section-description .description-service h2 {
-    color: #333333;
-}
-
 .section-description .description-service p{
     margin-top: 15px;
-    color: #333333;
 }
 
 .section-description .description-service hr {
@@ -141,6 +155,7 @@ header .banner .banner-text p {
     padding: 30px 20px 20px 20px;
     margin-top: 35px;
 }
+
 .section-description .description-features .feature-item h3 {
     color: #941B11;
 }
@@ -148,7 +163,7 @@ header .banner .banner-text p {
     margin-top: 15px;
 }
 
-/* 1.5 Section Description-->*/
+/* 1.1.5 Section Testimony-->*/
 .section-testimony{
     margin-top: 30px;
     background: url("/img/banner01.jpg");
@@ -184,13 +199,14 @@ header .banner .banner-text p {
     font-weight: bold;
 }
 
-/* 1.6 Section Business-->*/
+/* 1.1.6 Section Business-->*/
 .section-business{
     background: black;
     height: 50px;
 }
-/* 1.7 Section Contact-->*/
+/* 1.1.7 Section Contact-->*/
 .section-contact{
+    margin-top: 30px;
     padding: 30px 0;
     background: #F0F0F0;
 }
@@ -216,7 +232,7 @@ header .banner .banner-text p {
 }
 
 
-/* 1.8 Footer-->*/
+/* 1.1.8 Footer-->*/
 
 footer{
     display: flex;
@@ -251,7 +267,7 @@ footer p{
     text-align: center;
 }
 
-/* 1.9 Float Button-->*/
+/* 1.1.9 Float Button-->*/
 a.float-btn-container {
     display: flex;
     justify-content: center;
@@ -272,25 +288,56 @@ a span.fa.fa-angle-up{
     font-size: 30px;
 }
 
+/* 1.2=========About US========>*/
+/*1.2.1 Section: description => (1.1.4)-->*/
+.section-description .description-us{
+    display: flex;
+    flex-direction: column;
+}
+.section-description .description-us .us-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    padding: 15px;
+    overflow: hidden;
+}
 
+.section-description .description-us .us-item figure{
+    border-radius: 50%;
+    background: #EFB317;
+    width: 100px;
+}
+.section-description .description-us .us-item img{
+    display: block;
+    width: 100%;
+}
+.section-description .description-us .us-item .item-text{
+    margin-top: 15px;
+}
+.section-description .description-us .us-item .item-text h3{
+    color: #941B11;
+}
 
 
 
 /* 2. ################## TABLET ############################*/
-@media (min-width: 360px) {
+@media (min-width: 500px) {
     body {
         background: blue;
     }
 }
 
-/*################## DESKTOP ###########################*/
+/*3.################## DESKTOP ###########################*/
 @media (min-width: 768px) {
     body {
         background: yellow;
     }
 }
 
-/*#################### TV #############################*/
+/*4.#################### TV #############################*/
 @media (min-width: 1200px) {
 
 }

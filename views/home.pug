@@ -1,35 +1,9 @@
-extends templates/template-home
+extends templates/template
 block content
-    .mobile-bar
-        a(href="#" class="btn-menu")
-            span(class="fa fa-bars")
-            | Global Car SAC
-    header
-        .logo
-            figure
-                img(href="/img/logo.png" alt="Global Car")
-        nav(class="menu-nav")
-            ul
-                li
-                    a(href="/") Inicio
-                li
-                    a(href="/nosotros") Nosotros
-                li
-                    a(href="/cursos") Cursos
-                li
-                    a(href="/categorías") Categorías
-                li
-                    a(href="/locales") Locales
-                li
-                    a(href="/galeria") Galería
-                li
-                    a(href="clientes") Clientes
-                li
-                    a(href="contacto") Contacto
-        .banner
-            .banner-text
-                h1="Aprende a manejar con nosotros"
-                p="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem."
+    section.banner
+        .banner-text
+            h1="Aprende a manejar con nosotros"
+            p="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem."
     .section-description.container
         .description-service
             h2="Brevetes Perú"
@@ -37,15 +11,15 @@ block content
             hr
         .description-features
             .feature-item
-                span(class="TODO: font-instructor")
+                span(class="fa fa-graduation-cap")
                 h3="Instructores Calificados"
                 p="Nuestros instructores cuentan con amplia experiencia teórica y práctica en los diversos niveles que el alumno necesite."
             .feature-item
-                span(class="TODO: font-instructor")
+                span(class="fa fa-thumbs-o-up")
                 h3="Clases Personalizadas"
                 p="Cada alumno es evaluado y tiene un programa espcializado de entrenamiento teórico y práctico."
             .feature-item
-                span(class="TODO: font-instructor")
+                span(class="fa fa-car")
                 h3="Simuladores de Manejo"
                 p="Antes de conducir por las calles, nuestros alumnos practican en nuestro moderno simulador de manejo."
 
@@ -62,16 +36,4 @@ block content
                 .carousel-controls
     .section-business
         //TODO: Slider
-    .section-contact
-        .container
-            .contact-item.contact-phone
-                span(class="fa fa-mobile")
-                .contact-item-data
-                    h4="Celular"
-                    p="999 999 999 RPM: # 999 999 999"
-            .contact-item.contact-email
-                span(class="fa fa-envelope")
-                .contact-item-data
-                    h4="Email"
-                    p="contacto@globalcar.pe"
-            .contact-maps
+

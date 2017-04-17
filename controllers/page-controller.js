@@ -3,7 +3,10 @@
  */
 class PageController{
 	getHome(req, res, next){
-		res.render('home')
+		res.render('home');
+	}
+	getUs(req, res, next){
+		res.render('nosotros');
 	}
 }
 

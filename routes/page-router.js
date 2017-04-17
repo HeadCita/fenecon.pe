@@ -9,6 +9,7 @@ const PageController = require('../controllers/page-controller'),
 	pc = new PageController();
 
 router
-	.get('/', pc.getHome);
+	.get('/', pc.getHome)
+	.get('/nosotros', pc.getUs);
 
 module.exports = router;

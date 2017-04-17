@@ -1,0 +1,81 @@
+//
+   Created by joseph on 12/04/17.
+doctype html
+html(lang="es")
+    head
+        meta(charset="uft-8")
+        meta(name="viewport", content="width=device-width,initial-scale=1")
+        title Global Car SAC
+        link(href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet")
+        link(href="/css/font-awesome/css/font-awesome.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="/css/styles.css")
+    body
+        a.float-btn-container
+            span(href="#" class="fa fa-angle-up")
+        .mobile-bar
+            a(href="#" class="btn-menu")
+                span(class="fa fa-bars")
+                | Global Car SAC
+        header
+            .logo
+                figure
+                    img(href="/img/logo.png" alt="Global Car")
+            nav(class="menu-nav")
+                ul
+                    li
+                        a(href="/") Inicio
+                    li
+                        a(href="/nosotros") Nosotros
+                    li
+                        a(href="/cursos") Cursos
+                            span.fa.fa-angle-down
+                        ul.courses-menu
+                            li
+                                a(href="/cursos/nuevos-ai") Nuevos AI
+                            li
+                                a(href="/cursos/recategorizacion") Recategorización
+                            li
+                                a(href="/cursos/solo-manejo") Solo manejo
+                            li
+                                a(href="/cursos/manejo-defensivo") Manejo defensivo
+                            li
+                                a(href="/cursos/camioneta") Camioneta 4x4
+
+                    li
+                        a(href="/categorías") Categorías
+                    li
+                        a(href="/locales") Locales
+                    li
+                        a(href="/galeria") Galería
+                    li
+                        a(href="clientes") Clientes
+                    li
+                        a(href="contacto") Contacto
+        block content
+        .section-contact
+            .container
+                .contact-item.contact-phone
+                    span(class="fa fa-mobile")
+                    .contact-item-data
+                        h4 Teléfonos
+                        p (044) 630400
+                            br
+                            | RPM: # 966 888 608
+                .contact-item.contact-email
+                    span(class="fa fa-envelope")
+                    .contact-item-data
+                        h4="Email"
+                        p="contacto@globalcar.pe"
+                .contact-maps
+        footer
+            .footer-social
+                span.fb.social-item
+                span.tw.social-item
+                span.lin.social-item
+            .footer-links
+                figure.mtc
+                    img(src="/img/footer/mtc.png" alt="Autorizado por el Ministerio de Trasportes y Comunicaciones")
+                figure.google-play
+                    img(src="/img/footer/google-play.png" alt="Descarga nuestra app disponible en la Google Play")
+            p Global Car SAC &copy; 2017. Privacy Policy | Desarrollado por HeadCita
+        script(src="/js/source.js")
