@@ -13,6 +13,13 @@
             1.1.9  Float Button.
         1.2 About US
             1.2.1 Section: description => (1.1.4)
+        1.3 Courses
+            1.3.1 News AI
+        1.4 Categories
+        1.5 Locales
+        1.6 Gallery
+        1.7 Clients
+        1.8 Contact
     2. Tablet
     3. Desktop/laptop
     4. Desktop large/ TV
@@ -22,7 +29,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
@@ -170,7 +177,7 @@ section.banner .banner-text p {
     background-size: cover;
     text-align: center;
 }
-.section-testimony .background-red{
+.background-red{
     width: 100%;
     height: 100%;
     background: rgba(148, 27, 17, 0.8);
@@ -321,6 +328,126 @@ a span.fa.fa-angle-up{
     color: #941B11;
 }
 
+/* 1.3=========About US========>*/
+/*1.3.1 News AI -->*/
+.courses .course-item{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.3);
+}
+.courses .course-item .head-course-item{
+    background: url("/img/courses/ai/basic.svg");
+}
+.courses .course-item .head-course-item .background-color{
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+.courses .course-item .head-course-item .background-color.basic{
+    background: rgba(148, 27, 17, .8);
+}
+.courses .course-item .head-course-item .background-color.silver{
+    background: rgba(200, 200, 200, .8);
+}
+.courses .course-item .head-course-item .background-color.silver h3{
+    color: #333333;
+}
+.courses .course-item .head-course-item .background-color.gold{
+    background: rgba(239, 179, 23, .8);
+}
+.courses .course-item .head-course-item .background-color.platinium{
+    background: rgba(148, 134, 73, .8);
+}
+.courses .course-item .head-course-item .background-color figure{
+    width: 50px;
+    height: 50px;
+}
+
+.courses .course-item .head-course-item .background-color figure img{
+    width: 100%;
+}
+.courses .course-item .head-course-item .background-color .course-title{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.courses .course-item .head-course-item .background-color span {
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+}
+.courses .course-item .head-course-item .background-color h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.courses .course-item .description-course-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.courses .course-item .description-course-item p{
+    margin: 5px 0;
+}
+.courses .course-item .description-course-item p span{
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+/* 1.5=========Locales========>*/
+section.locales{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.map-item{
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+/* 1.8======= Contact=========>*/
+.section-contact-email{
+    margin-top: 30px;
+}
+.section-contact-email form{
+    padding: 2em 1em;
+}
+.section-contact-email form .login-form-input{
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    border: none;
+    line-height: 2.5em;
+    padding: 0 1em;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #941B11;
+}
+.section-contact-email form textarea.login-form-input{
+    font-size: small;
+}
+.section-contact-email form .login-form-submit{
+    display: block;
+    width: 100%;
+    border: none;
+    background: #941B11;
+    color: #EFB317;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all .3s;
+}
+.section-contact-email form .login-form-submit:hover{
+    background: #EFB317;
+    color: white;
+}
 
 
 /* 2. ################## TABLET ############################*/

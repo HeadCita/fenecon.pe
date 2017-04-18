@@ -1,0 +1,9 @@
+extends templates/template
+block content
+    .section-contact-email.container
+        form(action='contacto-email.js' method='POST')
+            input.login-form-input(type='text' name='first-name' placeholder='Nombres' required='true')
+            input.login-form-input(type='text' name='last-name' placeholder='Apellidos' required='true')
+            input.login-form-input(type='text' name='email' placeholder='Email' required='true')
+            textarea.login-form-input(type='' name='message' placeholder='Mensaje' required='true')
+            input.login-form-submit(type='submit' name='submit' value="Enviar")
