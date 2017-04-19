@@ -96,14 +96,14 @@ header nav ul li a:hover {
     background: #EFB317;
     color: #ffffff;
 }
-header nav ul li ul.courses-menu{
+header nav ul li ul.courses-menu, header nav ul li ul.categories-menu{
     display: none;
 }
-header nav ul li:hover ul.courses-menu{
+header nav ul li:hover ul.courses-menu, header nav ul li:hover ul.categories-menu {
     display: block;
 }
 
-header nav ul li:hover ul.courses-menu li a {
+header nav ul li:hover ul.courses-menu li a, header nav ul li:hover ul.categories-menu li a  {
     padding-left:  30px;
 }
 
