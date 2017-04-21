@@ -4,7 +4,7 @@
 (() => {
 	//--MOBILE MENU-->
 	const menu = document.querySelector('header nav'),
-		burgerButton = document.querySelector(".mobile-bar a");
+		burgerButton = document.querySelector(".mobile-bar span");
 	let flag = true;
 	burgerButton.addEventListener('click', () => {
 		if (flag) {

@@ -1,6 +1,7 @@
 /**
  * Created by joseph on 12/04/17.
  */
+"use strict";
 class PageController{
 	getHome(req, res, next){
 		res.render('home');
@@ -23,6 +24,25 @@ class PageController{
 	}
 	getCursoCamioneta(req, res, next){
 		res.render('cursos/camioneta');
+	}
+	//----CATEGORIES-->
+	getCategoryAi(req, res, next){
+		res.render('categories/ai');
+	}
+	getCategoryAiia(req, res, next){
+		res.render('categories/aiia');
+	}
+	getCategoryAiib(req, res, next){
+		res.render('categories/aiib');
+	}
+	getCategoryAiiia(req, res, next){
+		res.render('categories/aiiia');
+	}
+	getCategoryAiiib(req, res, next){
+		res.render('categories/aiiib');
+	}
+	getCategoryAiiic(req, res, next){
+		res.render('categories/aiiic');
 	}
 	getLocales(req, res, next){
 		res.render('locales');
