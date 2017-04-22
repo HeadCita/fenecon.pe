@@ -24,6 +24,7 @@
         2.1 Home
             2.1.4 Section: description
         2.2 About US: description => (2.1.4)
+        2.4 Categories
     3. Desktop/laptop
  */
 
@@ -411,6 +412,25 @@ a span.fa.fa-angle-up{
     margin-right: 3px;
 }
 
+/* 1.4========Categories=====>*/
+section.category-description h2{
+    font-size: 35px;
+}
+section.category-description .images-categories{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+section.category-description .images-categories img{
+        width: 100%;
+    }
+
+section.category-description .aditional-description p{
+    margin-bottom: 20px;
+}
+
 /* 1.5=========Locales========>*/
 section.locales{
     margin-top: 30px;
@@ -529,6 +549,36 @@ section.category-description ul li:before{
         text-align: right;
         align-items: flex-end;
     }
+
+    /* 2.4 ========Categories========>*/
+    section.category-description{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    section.category-description h2{
+        text-align: left;
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    section.category-description .images-categories{
+        width: 50%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    section.category-description .images-categories img{
+        width: 100%;
+    }
+
+    section.category-description .description-categories{
+        width: 50%;
+        padding: 10px;        
+    }
+
 }
 
 /*3.################## DESKTOP ###########################*/
@@ -580,6 +630,36 @@ section.category-description ul li:before{
         align-items: flex-start;
         text-align: left;
     }
+
+    /* 3.4 ========Categories========>*/
+
+    section.category-description{
+        position: relative;
+    }
+
+    section.category-description h2{
+        font-size: 40px;
+    }
+
+    section.category-description .images-categories{
+        position: absolute;
+        width: 40%;
+        height: 400px;
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+
+    section.category-description .description-categories{
+        width: 50%;
+        padding: 20px;
+        margin-left: 50%;
+    }
+
+    section.category-description .aditional-description{
+        width: 50%;
+        margin-bottom: 20px;
+        margin-left: 50%;
+}
 
 
 }
