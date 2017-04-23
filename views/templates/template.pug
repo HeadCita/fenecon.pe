@@ -67,20 +67,29 @@ html(lang="es")
                         a(href="contacto") Contacto
         block content
         .section-contact
+            h3 Llámanos, escríbenos o ven a nuestras oficinas!
+            hr
             .container
-                .contact-item.contact-phone
-                    span(class="fa fa-mobile")
-                    .contact-item-data
-                        h4 Teléfonos
-                        p (044) 630400
-                            br
-                            | RPM: # 966 888 608
-                .contact-item.contact-email
-                    span(class="fa fa-envelope")
-                    .contact-item-data
-                        h4="Email"
-                        p="contacto@globalcar.pe"
+                .contact-remote
+                    .item-remote.phone
+                        span.fa.fa-phone
+                        .text-item-remote
+                            h4 Telefonos
+                            p (044) 630400
+                                br
+                                | RMP: #966 888 608
+                    .item-remote
+                        span.fa.fa-envelope-open
+                        .text-item-remote
+                            h4 Email
+                            p contacto@globalcar.pe
                 .contact-maps
+                    .map-item
+                        iframe(src="https://www.google.com/maps/d/embed?mid=1xV8WVKWLGs_XdmO3M7nK39HLEog" width="100%" height="250px" frameborder="0")
+                        p Av. América Oeste #580 - Los Cedros, Trujillo.
+                    .map-item
+                        iframe(src="https://www.google.com/maps/d/embed?mid=1KC16Go5sr1YDq-y_1p23JICT210" width="100%" height="250px" frameborder="0")
+                        p Av. Costa Rica #000 (Al Costado del MTC), Trujillo.
         footer
             .footer-social
                 span.fb.social-item

@@ -23,6 +23,7 @@
     2. Tablet
         2.1 Home
             2.1.4 Section: description
+            2.1.7 Section: contact
         2.2 About US: description => (2.1.4)
         2.4 Categories
     3. Desktop/laptop
@@ -255,30 +256,52 @@ section.banner .banner-text p {
 }
 /* 1.1.7 Section Contact-->*/
 .section-contact{
-    margin-top: 30px;
     padding: 30px 0;
     background: #F0F0F0;
 }
-.section-contact .container{
-    display: flex;
-    flex-direction: column;
-}
-.section-contact .container .contact-item{
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-}
-.section-contact .container .contact-item span.fa-mobile{
-    font-size: 50px;
-    color: #941B11;
-}
-.section-contact .container .contact-item span.fa-envelope{
-    font-size: 30px;
-    color: #941B11;
-}
-.section-contact .container .contact-item .contact-item-data{
-    width: 170px;
-}
+    .section-contact h3{
+        color: #333333;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .section-contact .contact-remote{
+        display: flex;
+        flex-direction: column;
+    }
+        .section-contact .contact-remote .item-remote{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            margin-bottom: 15px;
+        }
+            .section-contact .contact-remote .item-remote span{
+                color: #941B11;
+                text-align: center;
+                font-size: 70px;
+                flex-basis: calc(20% - 20px) ;
+                margin: 0 10px;
+                padding: 0 15px;
+            }
+            .section-contact .contact-remote .item-remote span.fa-envelope-open{
+                font-size: 60px;
+            }
+            .section-contact .contact-remote .item-remote .text-item-remote{
+                flex-basis: calc(80% - 20px);
+                margin: 0 10px;
+            }
+            .section-contact .contact-maps {
+                display: flex;
+                flex-direction: column;
+                margin-top: 15px;
+            }
+            .section-contact .contact-maps .map-item{
+                background: white;
+            }
+            .section-contact .contact-maps .map-item p{
+                padding: 15px 15px;
+                text-align: center;
+            }
 
 
 /* 1.1.8 Footer-->*/
@@ -541,6 +564,26 @@ section.category-description ul li:before{
         align-items: flex-start;
         text-align: left;
     }
+    /* 2.1.7 Section Contact-->*/
+    .section-contact .contact-remote{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section-contact .contact-remote .item-remote{
+        width: 45%;
+    }
+    .section-contact .contact-remote .item-remote.phone{
+        padding: 0 35px 0 0;
+    }
+    .section-contact .contact-remote .item-remote span{
+        flex-basis: auto;
+    }
+    .section-contact .contact-remote .item-remote .text-item-remote{
+        flex-basis: auto;
+    }
+    .section-contact .contact-maps{
+        margin-top: 60px;
+    }
     /* 2.2 ========About-Us========>*/
     .section-description.us .description-features .feature-card.vision{
         flex-direction: row-reverse;
@@ -607,6 +650,14 @@ section.category-description ul li:before{
     .section-description .description-features .feature-card .text-card {
         align-items: center;
         text-align: center;
+    }
+    /* 3.1.7 Section: Description-->*/
+    .section-contact .contact-maps{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section-contact .contact-maps .map-item{
+        width: 45%;
     }
     /* 3.2 ========About-Us========>*/
     .section-description.us .description-features{
