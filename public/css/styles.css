@@ -199,6 +199,16 @@ section.banner .banner-text p {
             align-items: center;
             margin-bottom: 30px;
         }
+        .description-features .feature-column{
+
+        }
+        .description-features .feature-img{
+            margin-bottom: 30px;
+        }
+        .description-features .feature-img img{
+            width: 100%;
+            display: block;
+        }
                 .description-features .feature-card .img-card figure{
                     width: 60px;
                     height: 60px;
@@ -659,10 +669,10 @@ section.category-description ul li:before{
     .section-description{
         margin-top: 30px;
     }
-    .section-description .description-features{
-        align-items: flex-start;
+    .section-description .description-features .feature-column.left .feature-card{
+        flex-direction: row-reverse;
     }
-    .section-description .description-features .feature-card{
+    .section-description .description-features .feature-column.right .feature-card{
         flex-direction: row;
     }
         .section-description .description-features .feature-card .img-card{
@@ -677,11 +687,14 @@ section.category-description ul li:before{
                 height: 80px;
                 margin-bottom: 0;
             }
-    .section-description .description-features .feature-card .text-card {
+    .section-description .description-features .feature-column.left .feature-card .text-card {
         flex-basis: 70%;
         flex-basis: calc(70% - 20px);
         margin: 0 10px;
-        align-items: flex-start;
+        align-items: flex-end;
+        text-align: right;
+    }
+    .section-description .description-features .feature-column.right .feature-card .text-card {
         text-align: left;
     }
     /* 2.1.5 Section: Testimony-->*/
@@ -761,23 +774,48 @@ section.category-description ul li:before{
     /* 3.1.4 Section: Description-->*/
     .section-description .description-features{
         flex-direction: row;
+        align-items: stretch;
     }
-    .section-description .description-features .feature-card{
+    .section-description .description-features .feature-column{
+        flex-basis: 30%;
+        display: flex;
         flex-direction: column;
+        justify-content: space-around;
+    }
+    .section-description .description-features .feature-column.left .feature-card:nth-child(1){
+        position: relative;
+        left: 10%;
+    }
+    .section-description .description-features .feature-column.left .feature-card:nth-child(3){
+        position: relative;
+        left: 10%;
+    }
+    .section-description .description-features .feature-column.right .feature-card:nth-child(1){
+        position: relative;
+        right: 10%;
+    }
+    .section-description .description-features .feature-column.right .feature-card:nth-child(3){
+        position: relative;
+        right: 10%;
     }
     .section-description .description-features .feature-card .img-card{
         display: flex;
+        flex-basis: calc(33.3% - 30px);
         justify-content: center;
         align-content: center;
     }
     .section-description .description-features .feature-card .img-card figure{
-        width: 80px;
-        height: 80px;
-        margin-bottom: 15px;
+        width: 40px;
+        height: 40px;
     }
-    .section-description .description-features .feature-card .text-card {
-        align-items: center;
-        text-align: center;
+
+    .section-description .description-features .feature-column .feature-card .text-card h3{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .section-description .description-features .feature-column .feature-card .text-card p{
+        font-size: 12px;
+        line-height: 15px;
     }
     /* 3.1.7 Section: Contact-->*/
     .section-contact .contact-maps{
