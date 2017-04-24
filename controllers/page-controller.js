@@ -51,6 +51,10 @@ class PageController{
 	getContacto(req, res, next){
 		res.render('contacto');
 	}
+
+	getGaleria(req, res, next){
+		res.render('galery');
+	}
 }
 
 module.exports = PageController;
