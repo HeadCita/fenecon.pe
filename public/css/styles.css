@@ -28,6 +28,7 @@
         2.4 Categories
     3. Desktop/laptop
  */
+@import url('/css/font-awesome/css/font-awesome.css');
 
 * {
     margin: 0;
@@ -67,89 +68,12 @@ body {
 }
 /* 1.1 ========Home========>*/
 /* 1.1.1 Mobile Burger-->*/
-.mobile-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #941B11;
-    width: 100%;
-    padding: 5px 15px;
-}
 
-.mobile-bar a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    outline: none;
-}
-
-.mobile-bar .title{
-    display: flex;
-    align-items: center;
-}
-
-.mobile-bar img{
-    margin-right: 10px;
-    width: 50px;
-    height: auto;
-}
-
-.mobile-bar h1{
-    color: white;
-    font-size: 25px;
-}
-.mobile-bar span{
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-}
 
 
 /* 1.1.2 Menu-->*/
-header {
-    width: 100%;
-}
 
-header .logo {
-    display: none;
-}
 
-header nav {
-    background: rgba(0, 0, 0, 0.8);
-    width: 80%;
-    height: 100%;
-    position: fixed;
-    left: -100%;
-    transition: all .4s;
-}
-
-header nav ul li a {
-    display: block;
-    text-decoration: none;
-    font-weight: 700;
-    color: white;
-    padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-header nav ul li a span{
-    margin-left: 10px;
-}
-
-header nav ul li a:hover {
-    background: #EFB317;
-    color: #ffffff;
-}
-header nav ul li ul.courses-menu, header nav ul li ul.categories-menu{
-    display: none;
-}
-header nav ul li:hover ul.courses-menu, header nav ul li:hover ul.categories-menu {
-    display: block;
-}
-
-header nav ul li:hover ul.courses-menu li a, header nav ul li:hover ul.categories-menu li a  {
-    padding-left:  30px;
-}
 
 /* 1.1.3 Banner-->*/
 section.banner {
@@ -786,8 +710,270 @@ section.category-description ul li:before{
         width: 50%;
         margin-bottom: 20px;
         margin-left: 50%;
-}
+    }
+
+    /* 3.5 ========Header========>*/
+
+    header {
+        background: url("/img/header/bg-headerOscurecido.jpg");
+        width: 100%;
+        background-size: cover;
+        height: 640px;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+        header .info-atencion {
+            width: 100%;
+            color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 3rem;
+        }
+
+        header .info-atencion:after {
+            content: '';
+            display: block;
+            background-color: #fff;
+            width: 80%;
+            position: relative;
+            top: 100%;
+            border: 1px solid #fff;
+            border-radius: 100%;
+            margin: 0 auto;
+        }
+
+        header .info-atencion span {
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        header .info-atencion .left {
+            float: left;
+        }
+
+        header .info-atencion .right {
+            float: right;
+        }
 
 
+    .menu-bar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    .menu-bar .logo {
+        width: 150px;
+        margin-left: 6.5rem; 
+    }
+
+    .menu-bar .logo img {
+        width: 100%;
+    }
+
+    .menu-bar .menu-items {
+        list-style: none;
+        display: flex;
+        margin-right: 1rem; 
+    }
+
+    .menu-bar .menu-items li {
+        margin-right: 20px;
+    }
+
+    .menu-bar .menu-items li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 100px;
+        position: relative;
+       
+    }
+
+    .menu-bar .menu-items li a:before,
+    .menu-bar .menu-items li a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .menu-bar .menu-items li a:before {
+        top: 0;
+        left: 0%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu-bar .menu-items li a:after {
+        bottom: 0;
+        right: 0%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu-bar .menu-items li:hover > a:after {
+        opacity: 1;
+        width: 40%;
+        border-radius: inherit;
+    }
+
+    .menu-bar .menu-items li:hover > a:before {
+        opacity: 1;
+        width: 40%;
+         border-radius: inherit;
+    }
+
+    .banner-content {
+        width: 100%;
+        height: calc(100% - 3rem - 119px);
+    }
+
+    .banner-content .mensaje {
+        position: absolute;
+        width: 60%;
+        top: 35%;
+        right: 0;
+        text-align: right;
+        margin-top: -2rem;
+        margin-right: 2rem;
+    }
+
+    .banner-content .mensaje .bienvenida {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .banner-content .mensaje h1 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 3.5rem;
+    }
+
+    .banner-content .mensaje h1 span {
+        color: rgb(240, 181, 51);
+    }
+
+    .banner-content .mensaje p {
+        color: #fff;
+        margin-top: 1rem;
+    }
+
+    .banner-content .mensaje .botones {
+        margin-top: 2rem;
+    }
+
+    .banner-content .mensaje .botones a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+    }
+
+    .banner-content .mensaje .botones .reservar {
+        margin-right: 2rem;
+        transition: background-color 0.3s ease,
+                    color 0.3s ease;
+    } 
+
+    .banner-content .mensaje .botones .reservar:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .banner-content .mensaje .botones .ver-mas {
+        background-color: #A62620;
+        border: 1px solid #A62620;
+        transition: background-color 0.3s ease,
+                    color 0.3s ease,
+                    border 0.3s ease;
+    }
+
+    .banner-content .mensaje .botones .ver-mas:hover {
+        background-color: #fff;
+        color: #A62620;
+        border: 1px solid #fff;
+    }
+
+    .banner-content .pre-inscripcion {
+        width: 23%;
+        text-align: center;
+        background-color: rgba(192, 192, 192, 0.4);
+        position: absolute;
+        top: 30%;
+        margin-left: 2rem;
+        border-radius: 4px;
+    }
+
+    .banner-content .pre-inscripcion input,
+    .banner-content .pre-inscripcion select {
+        display: block;
+        width: 100%;
+        margin: 13px 0;
+        padding: 10px 5px;
+        background-color: rgba(73, 72, 69, 0.6);
+        border: none;
+        border-radius: 3px;
+        /*color: rgb(83, 84, 81);*/
+        color: #FFF;
+    }
+
+    .banner-content .pre-inscripcion input:focus,
+    .banner-content .pre-inscripcion select:focus {
+        outline: none;
+    }
+
+    .banner-content .pre-inscripcion #nombre:before {
+        content: "";
+        display: block;
+    }
+
+    .banner-content .pre-inscripcion select {
+        width: 45%;
+        color: #fff;
+    }
+
+    .banner-content .pre-inscripcion select option {
+        background-color: #fff;
+        color: #000;
+        padding: 10px 10px;
+    }
+
+    .banner-content .pre-inscripcion select option:hover {
+        background-color: #fff;
+        color: rgb(240, 181, 51);
+    }
+
+    .banner-content .pre-inscripcion input[type="submit"] {
+        background-color: #A62620;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+        transition: background-color 0.3s ease,
+                    color 0.3s ease;
+    }
+
+    .banner-content .pre-inscripcion input[type="submit"]:hover {
+        background-color: #fff;
+        color: #000;        
+    }
+
+    .banner-content .pre-inscripcion .form-header {
+        text-transform: uppercase;
+        color: #000;
+        background-color: #fff;
+        padding: 10px 0;
+    }
+
+    .banner-content .pre-inscripcion .form-body {
+        width: 80%;
+        margin: auto;
+    }
 }
 
