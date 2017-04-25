@@ -393,33 +393,57 @@ footer{
     flex-direction: column;
     background: #696969;
 }
+    footer .footer-body{
+        display: flex;
+        flex-direction: column;
+    }
+        footer .footer-body .footer-social{
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+        }
+            footer .footer-body .footer-social span{
+                font-size: 40px;
+                color: white;
+                margin: 0 15px;
+                border-radius: 8px;
+                transition: all .5s;
+                padding: 0 2px;
+            }
+            footer .footer-body .footer-social .fa-facebook-square:hover{
+                color: #3B5998;
+                background: white;
+            }
+            footer .footer-body .footer-social .fa-twitter-square:hover{
+                color: #1DA1F2;
+                background: white;
+            }
+            footer .footer-body .footer-social .fa-youtube-square:hover{
+                color: #E62117;
+                background: white;
+            }
+        footer .footer-body .footer-links{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        footer .footer-links figure{
+            padding: 15px;
+        }
+            footer .footer-links figure img{
+                display: block;
+                width: 100%;
+            }
+    footer p{
+        text-align: center;
+        font-size: 10px;
+        color: white;
+        margin-bottom: 5px;
+    }
 
-footer .footer-social{
-    display: flex;
-    justify-content: center;
-}
-footer .social-item{
-    margin: 0 10px;
-}
-footer .footer-links{
-    display: flex;
-    justify-content: space-between;
-}
-footer .footer-links figure{
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-}
-footer .footer-links figure img{
-    display: block;
-    width: 100%;
-}
-footer p{
-    padding: 10px;
-    font-size: 10px;
-    color: white;
-    text-align: center;
-}
+
+
 
 /* 1.1.9 Float Button-->*/
 a.float-btn-container {
@@ -721,6 +745,21 @@ section.category-description ul li:before{
     .section-contact .contact-maps{
         margin-top: 60px;
     }
+    /* 2.1.7 Section Contact-->*/
+    footer .footer-body{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+        footer .footer-body .footer-links{
+            flex-direction: column;
+            flex-basis: 30%;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+        footer .footer-body .footer-social{
+            align-items: center;
+        }
     /* 2.2 ========About-Us========>*/
     .section-description.us .description-features .feature-card.vision{
         flex-direction: row-reverse;
