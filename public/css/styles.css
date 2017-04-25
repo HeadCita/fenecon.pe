@@ -1003,12 +1003,13 @@ section.category-description ul li:before{
     .banner-content {
         width: 100%;
         height: calc(100% - 3rem - 119px);
+        position: relative;
     }
 
     .banner-content .mensaje {
         position: absolute;
         width: 60%;
-        top: 35%;
+        top: 20%;
         right: 0;
         text-align: right;
         margin-top: -2rem;
@@ -1079,7 +1080,7 @@ section.category-description ul li:before{
         text-align: center;
         background-color: rgba(192, 192, 192, 0.4);
         position: absolute;
-        top: 30%;
+        top: 15%;
         margin-left: 2rem;
         border-radius: 4px;
     }
