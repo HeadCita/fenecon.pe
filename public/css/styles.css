@@ -277,6 +277,7 @@ section.banner .banner-text p {
 .section-contact{
     padding: 30px 0;
     background: #F0F0F0;
+    margin-top: 30px;
 }
     .section-contact h3{
         color: #333333;
@@ -489,18 +490,25 @@ section.title-courses h2{
 }
 
 /* 1.4========Categories=====>*/
+section.category-description .title-category{
+    margin-bottom: 20px;   
+}
 section.category-description h2{
     font-size: 35px;
+    margin-bottom: auto;
 }
 section.category-description .images-categories{
         width: 100%;
         display: flex;
-        align-content: center;
+        justify-content: center;
         align-items: center;
+        padding-bottom: 40px;
+        padding-top: 10px;        
     }
 
 section.category-description .images-categories img{
-        width: 100%;
+        width: 250px;
+        height: 250px;
     }
 
 section.category-description .aditional-description p{
@@ -736,21 +744,30 @@ section.category-description ul li:before{
         align-content: space-around;
     }
 
+    section.category-description .title-category{
+        width: 100%;    
+    }
+
     section.category-description h2{
-        text-align: left;
+        text-align: center;
         width: 100%;
-        margin-left: 5%;
+    }
+
+    section.category-description hr{
+        text-align: center;
     }
 
     section.category-description .images-categories{
         width: 50%;
         display: flex;
-        align-content: center;
+        justify-content: center;
         align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     section.category-description .images-categories img{
-        width: 100%;
+        width: 100%
     }
 
     section.category-description .description-categories{
@@ -888,8 +905,14 @@ section.category-description ul li:before{
         position: absolute;
         width: 40%;
         height: 400px;
-        margin-top: 30px;
+        margin-top: 90px;
         margin-left: 5%;
+        padding: 40px;
+    }
+
+    section.category-description .images-categories img{
+        width: 100%;
+        height: 100%;
     }
 
     section.category-description .description-categories{
