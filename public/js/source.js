@@ -8,10 +8,10 @@
 	let flag = true;
 	burgerButton.addEventListener('click', () => {
 		if (flag) {
-			menuHeight(menu, 300, 400);
+			menuHeight(menu, 300, 500);
 			flag = false;
 		} else {
-			menuHeight(menu, 0, 400);
+			menuHeight(menu, 0, 500);
 			flag = true;
 		}
 
