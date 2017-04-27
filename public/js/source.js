@@ -8,17 +8,35 @@
 	let flag = true;
 	burgerButton.addEventListener('click', () => {
 		if (flag) {
-			menu.style.height = '100%';
+			menuHeight(menu, 300, 400);
 			flag = false;
 		} else {
-			menu.style.height = '0';
+			menuHeight(menu, 0, 400);
 			flag = true;
 		}
 
 	})
 })();
 
+function menuHeight(element, hasta, duracion) {
 
+	let inicio = element.offsetHeight,
+            recorrido = hasta - inicio,
+            velocidad = 0,
+            incremento = 20;
+
+        let animacion = () => {
+            velocidad += incremento;
+            let val = Math.easeInOutQuad(velocidad, inicio, recorrido, duracion);
+            element.style.height = `${val}px`;
+
+            if (velocidad < duracion) {
+                setTimeout(animacion, incremento);
+            }
+        };
+        animacion();
+
+}
 
 Math.easeInOutQuad = (t, b, c, d) => {
         t /= d / 2;
