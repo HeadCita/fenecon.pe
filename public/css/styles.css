@@ -53,12 +53,25 @@ h3{
     color: #941B11;
     margin-bottom: 15px;
 }
-hr{
-    width: 50px;
-    height: 3px;
+.hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-top: auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+.hr img{
+    width: 18px;
+    margin: 0 3px;
+}
+.hr hr{
+    border: 0;
+    height: 2px;
+    flex-basis: 50px;
     background: #941B11;
-    border: none;
-    margin: 15px auto;
 }
 
 /* 1. ################### MOBILE ############################*/
