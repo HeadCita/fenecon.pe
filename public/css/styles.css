@@ -28,7 +28,6 @@
         2.4 Categories
     3. Desktop/laptop
  */
-@import url('/css/font-awesome/css/font-awesome.css');
 
 * {
     margin: 0;
@@ -82,10 +81,59 @@ body {
 /* 1.1 ========Home========>*/
 /* 1.1.1 Mobile Burger-->*/
 
+header .info-atencion {
+    display: none;
+}
 
+.menu-bar .burguer{
+    display: block;
+    float: right;
+}
+
+.menu-bar .burguer span {
+    line-height: 80px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
 /* 1.1.2 Menu-->*/
+.menu-bar .logo {
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    padding: 5px 1rem;
+}
 
+.menu-bar .logo img {
+    width: 80px;
+}
+
+
+.menu-bar .menu-items {
+    list-style: none;
+    background-color: rgb(34, 34, 34);
+    height: 0;
+}
+
+.menu-bar .menu-items li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    display: block;
+}
+
+.menu-bar .menu-items li a:hover {
+    color: rgb(240, 181, 51);
+}
+
+.banner-content form {
+    display: none;
+}
+
+.banner-content .banner-mobile {
+    width: 100%;
+}
 
 
 /* 1.1.3 Banner-->*/
@@ -966,6 +1014,7 @@ section.category-description ul li:before{
             max-width: 1200px;
             margin: 0 auto;
             height: 3rem;
+            display: block;
         }
 
         header .info-atencion:after {
@@ -1000,9 +1049,15 @@ section.category-description ul li:before{
         margin-top: 1rem;
     }
 
+    .menu-bar .burguer {
+        display: none;
+    }
+
     .menu-bar .logo {
         width: 150px;
-        margin-left: 6.5rem; 
+        margin-left: 6.5rem;
+        padding: 0;
+        background-color: initial;
     }
 
     .menu-bar .logo img {
@@ -1013,6 +1068,7 @@ section.category-description ul li:before{
         list-style: none;
         display: flex;
         margin-right: 1rem; 
+        background-color: initial;
     }
 
     .menu-bar .menu-items li {
@@ -1020,12 +1076,18 @@ section.category-description ul li:before{
     }
 
     .menu-bar .menu-items li a {
+        display: inline;
+        padding: 0;
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
         line-height: 100px;
         position: relative;
        
+    }
+
+    .menu-bar .menu-items li a:hover {
+        color: #fff;
     }
 
     .menu-bar .menu-items li a:before,
@@ -1062,6 +1124,14 @@ section.category-description ul li:before{
         opacity: 1;
         width: 40%;
          border-radius: inherit;
+    }
+
+    .banner-content .banner-mobile {
+        display: none;
+    }
+
+    .banner-content form {
+        display: block;
     }
 
     .banner-content {
