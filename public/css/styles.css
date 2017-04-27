@@ -1015,6 +1015,7 @@ section.category-description ul li:before{
     .menu-bar .logo {
         width: 150px;
         margin-left: 6.5rem;
+        padding: 0;
         background-color: initial;
     }
 
