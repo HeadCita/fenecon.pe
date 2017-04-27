@@ -153,7 +153,7 @@ section.banner .banner-text p {
     margin: 0 auto;
     width: 100%;
     position: relative;
-    background: #99322D;
+    background: #941B11;
     padding: 30px 0;
     overflow: hidden;
 }
@@ -268,65 +268,74 @@ section.banner .banner-text p {
     right: 10px;
 }
 
-/* 1.1.6 Section Business-->*/
-.section-business{
-    background: black;
-    height: 50px;
-}
 /* 1.1.7 Section Contact-->*/
-.section-contact{
-    padding: 30px 0;
-    background: #F0F0F0;
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    background: #E9EBEE;
+    padding-bottom: 35px;
+}
+.section-contact h2{
     margin-top: 30px;
 }
-    .section-contact h3{
-        color: #333333;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .section-contact hr{
-        margin-bottom: 80px;
-    }
-    .section-contact .contact-remote{
-        display: flex;
-        flex-direction: column;
-    }
-        .section-contact .contact-remote .item-remote{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 0;
-            margin-bottom: 15px;
-        }
-            .section-contact .contact-remote .item-remote span{
-                color: #941B11;
-                text-align: center;
-                font-size: 70px;
-                flex-basis: calc(20% - 20px) ;
-                margin: 0 10px;
-                padding: 0 15px;
-            }
-            .section-contact .contact-remote .item-remote span.fa-envelope-open{
-                font-size: 60px;
-            }
-            .section-contact .contact-remote .item-remote .text-item-remote{
-                flex-basis: calc(80% - 20px);
-                margin: 0 10px;
-            }
-            .section-contact .contact-maps {
-                display: flex;
-                flex-direction: column;
-                margin-top: 15px;
-            }
-            .section-contact .contact-maps .map-item{
-                background: white;
-            }
-            .section-contact .contact-maps .map-item p{
-                padding: 15px 15px;
-                text-align: center;
-            }
+.section-contact .contact-local{
+    display: flex;
+    margin: 15px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.section-contact .contact-local.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
+.section-contact .contact-local .local.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    background: white;
+}
 
+.section-contact .contact-local .local.title h4{
+    color: #941B11;
+    font-size: 30px;
+    position: relative;
+}
+.section-contact .contact-local .local.title span{
+    color: #941B11;
+    font-size: 60px;
+    margin-left: 15px;
+}
+.section-contact .contact-local .local.title h4:before{
+    content: "oficina";
+    color: rgba(0,0,0,.3);
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    top: -50%;
+}
+.section-contact .contact-local.reverse .local.title h4:before{
+    right: 0;
+}
+.section-contact .contact-local .local.map{
+    flex-basis: 50%;
+}
+.section-contact .contact-local .local.contact-data{
+    flex-basis: 25%;
+    padding: 15px 20px;
+    background: #941B11;
+}
+.section-contact .contact-local .local.contact-data h5{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.section-contact .contact-local .local.contact-data p{
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
 /* 1.1.8 Footer-->*/
 
 footer{
