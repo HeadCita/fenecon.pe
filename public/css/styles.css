@@ -133,37 +133,90 @@ header .info-atencion {
 
 .banner-content .banner-mobile {
     width: 100%;
+    display: block;
 }
 
 
 /* 1.1.3 Banner-->*/
-section.banner {
-    /*noinspection CssUnknownTarget*/
-    background: url("/img/banner01.jpg");
-    background-size: cover;
-    padding: 10px;
+
+.banner-content {
+    position: relative;
 }
 
-section.banner .banner-text {
-    display: flex;
-    align-items: center;
-    width: 160px;
-    height: 160px;
-    margin: auto;
-    padding: 5px;
-    background: rgba(239, 179, 23, .8);
-    border-radius: 50%;
+.banner-content .mensaje {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        right: 0;
+        text-align: right;
+        margin: 0 1rem;
+        margin-top: -3rem;
+        /*margin-right: 2rem;*/
 }
 
-section.banner .banner-text h1 {
-    font-size: 15px;
-    text-align: center;
+.banner-content .mensaje .bienvenida {
+    text-transform: uppercase;
     color: #fff;
+    font-size: 1rem;
 }
 
-section.banner .banner-text p {
-    display: none;
+.banner-content .mensaje h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.4rem;
 }
+
+.banner-content .mensaje h1 span {
+    color: rgb(240, 181, 51);
+}
+
+.banner-content .mensaje p {
+    display: none;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.banner-content .mensaje .botones {
+    margin-top: 0.5rem;
+}
+
+.banner-content .mensaje .botones a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+}
+
+.banner-content .mensaje .botones .reservar {
+    margin-right: 1rem;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+} 
+
+.banner-content .mensaje .botones .reservar:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.banner-content .mensaje .botones .ver-mas {
+    background-color: #A62620;
+    border: 1px solid #A62620;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border 0.3s ease;
+}
+
+.banner-content .mensaje .botones .ver-mas:hover {
+    background-color: #fff;
+    color: #A62620;
+    border: 1px solid #fff;
+}
+
+
 
 /* 1.1.4 Section Description-->*/
 .section-description {
