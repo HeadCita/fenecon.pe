@@ -561,6 +561,9 @@ section.title-courses h2{
 .courses .course-item .head-course-item .background-color.silver{
     background: rgba(170, 170, 170, .8);
 }
+.courses .course-item .head-course-item .background-color.silver span{
+    color: #333333;
+}
 .courses .course-item .head-course-item .background-color.silver h3{
     color: #333333;
 }
