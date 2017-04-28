@@ -1112,13 +1112,13 @@ section.category-description ul li:before{
         header .info-atencion {
             width: 100%;
             color: #fff;
-            max-width: 1200px;
             margin: 0 auto;
             height: 3rem;
             display: block;
+            background-color: rgba(166, 38, 32,1);
         }
 
-        header .info-atencion:after {
+        /*header .info-atencion:after {
             content: '';
             display: block;
             background-color: #fff;
@@ -1128,7 +1128,7 @@ section.category-description ul li:before{
             border: 1px solid #fff;
             border-radius: 100%;
             margin: 0 auto;
-        }
+        }*/
 
         header .info-atencion span {
             padding: 10px 15px;
