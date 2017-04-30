@@ -957,7 +957,7 @@ section.category-description ul li:before{
     }
 
     section.category-description .images-categories img{
-        width: 100%
+        width: 80%;
     }
 
     section.category-description .description-categories{
@@ -1142,13 +1142,13 @@ section.category-description ul li:before{
         position: absolute;
         width: 40%;
         height: 400px;
-        margin-top: 90px;
+        margin-top: 100px;
         margin-left: 5%;
         padding: 40px;
     }
 
     section.category-description .images-categories img{
-        width: 100%;
+        max-width: 350px;
         height: 100%;
     }
 
