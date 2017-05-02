@@ -268,11 +268,12 @@ header .info-atencion {
     width: 100%;
     position: relative;
     background: #941B11;
-    padding: 30px 0;
+    padding: 50px 0;
     overflow: hidden;
 }
 .section-testimony h2{
     color: #fff;
+    padding-bottom: 10px; 
 }
 .section-testimony hr{
     background: white;
@@ -280,7 +281,7 @@ header .info-atencion {
 
 .section-testimony .slider{
     display: flex;
-    width: 200%;
+    width: 100%;
 }
 
 .section-testimony .slider .section{
@@ -320,13 +321,13 @@ header .info-atencion {
     color: #EFB317;
 }
 .section-testimony .slider .section .bubble .fa-circle.one{
+    margin-top: 4px;
     font-size: 25px;
 }
 .section-testimony .slider .section .bubble .fa-circle.two{
+    
     font-size: 15px;
 }
-
-
 .section-testimony .slider .section img{
     display: block;
     width: 70px;
@@ -342,6 +343,7 @@ header .info-atencion {
 }
 .section-testimony .slider .section p.work{
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .section-testimony .slider .section.focus{
@@ -851,6 +853,10 @@ section.category-description ul li:before{
     /* 2.1.5 Section: Testimony-->*/
     .section-testimony .slide ul li .testimony-textbox{
         width: 400px;
+    }
+    .section-testimony .slider{
+        display: flex;
+        width: 200%;
     }
     /* 2.1.7 Section Contact-->*/
     .section-contact .contact-remote{
