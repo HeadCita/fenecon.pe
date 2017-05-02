@@ -234,12 +234,14 @@ header .info-atencion {
             flex-direction: column;
             align-items: center;
             margin-bottom: 30px;
+            padding-top: 10px;
         }
         .description-features .feature-column{
 
         }
         .description-features .feature-img{
-            margin-bottom: 30px;
+            margin-bottom: 30px;            
+            padding: 20px;
         }
         .description-features .feature-img img{
             width: 100%;
@@ -807,12 +809,18 @@ section.category-description ul li:before{
     /* 2.1.4 Section: Description-->*/
     .section-description{
         margin-top: 30px;
+        
     }
     .section-description .description-features .feature-column.left .feature-card{
         flex-direction: row-reverse;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .section-description .description-features .feature-column.right .feature-card{
         flex-direction: row;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
     }
         .section-description .description-features .feature-card .img-card{
             flex-basis: calc(30% - 20px);
@@ -836,6 +844,10 @@ section.category-description ul li:before{
     .section-description .description-features .feature-column.right .feature-card .text-card {
         text-align: left;
     }
+    .section-description .description-features .feature-img{
+        padding: 0px;
+    }
+    
     /* 2.1.5 Section: Testimony-->*/
     .section-testimony .slide ul li .testimony-textbox{
         width: 400px;
@@ -980,42 +992,58 @@ section.category-description ul li:before{
     /* 3.1.4 Section: Description-->*/
     .section-description{
         margin-top: 50px;
+        margin-bottom: 40px;
     }
     .section-description .description-features{
         flex-direction: row;
         align-items: stretch;
     }
     .section-description .description-features .feature-column{
-        flex-basis: 30%;
+        flex-basis: 35%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
+    .section-description .description-features .feature-card{
+        margin-bottom: 25px;   
+    }
+
     .section-description .description-features .feature-column.left .feature-card:nth-child(1){
-        position: relative;
-        left: 10%;
+        padding-left: 20px;
+    }
+    .section-description .description-features .feature-column.left .feature-card:nth-child(2){
+        padding-right: 30px;
     }
     .section-description .description-features .feature-column.left .feature-card:nth-child(3){
-        position: relative;
-        left: 10%;
+        padding-left: 20px;
     }
+    
     .section-description .description-features .feature-column.right .feature-card:nth-child(1){
-        position: relative;
-        right: 10%;
+        padding-right: 20px;        
+    }
+    .section-description .description-features .feature-column.right .feature-card:nth-child(2){
+        padding-left: 30px;        
     }
     .section-description .description-features .feature-column.right .feature-card:nth-child(3){
-        position: relative;
-        right: 10%;
+        padding-right: 20px;;        
+    }    
+    .section-description .description-features .feature-column.left .feature-card .text-card{
+        margin: 0px;        
     }
     .section-description .description-features .feature-card .img-card{
         display: flex;
         flex-basis: calc(33.3% - 30px);
         justify-content: center;
         align-content: center;
-    }
+    }    
     .section-description .description-features .feature-card .img-card figure{
         width: 40px;
         height: 40px;
+    }
+
+    .section-description .description-features .feature-img{
+        display: flex;
+        align-items: center;
     }
 
     .section-description .description-features .feature-column .feature-card .text-card h3{
@@ -1023,7 +1051,7 @@ section.category-description ul li:before{
         margin-bottom: 5px;
     }
     .section-description .description-features .feature-column .feature-card .text-card p{
-        font-size: 12px;
+        font-size: 13px;
         line-height: 15px;
     }
     /* 3.1.7 Section: Contact-->*/
