@@ -1,5 +1,31 @@
 extends templates/template
 block content
+    header
+        include menu.pug
+        .banner-content
+            form.pre-inscripcion
+                .form-header
+                    p Inscribete
+                .form-body
+                    input(type="text" placeholder="Nombre" id="nombre")
+                    input(type="e-mail" placeholder="Email" id="email")
+                    input(type="text" placeholder="Telefono" id="telefono")
+                    select
+                        option(value="") Nuevos AI
+                        option(value="") Recategorizacion
+                        option(value="") Solo manejo
+                        option(value="") Manejo defensivo
+                        option(value="") Camioneta 4x4
+                    input(type="submit" value="Enviar")
+            img(src="/img/header/bg-headerOscurecido.jpg" class="banner-mobile")
+            .mensaje
+                h3.bienvenida Bienvenido a Global Car
+                h1 Aprende a <span>manejar</span> con nosotros
+                p  Somos tu mejor opción para aprender a manejar todo tipo de vehículos <br>y obtener tu brevete de la manera mas rápida y sencilla.
+                .botones
+                    a.reservar(href="#") Inscribirse
+                    a.ver-mas(href="#") Ver mas
+
     .section-description.container
         .description-service
             h2="Brevetes Perú"

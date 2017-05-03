@@ -66,14 +66,29 @@
     
     //--MOBILE MENU-->
 	const menu = document.querySelector(".menu-items"),
-	 	  burgerButton = document.querySelector("#icon-bar");
+	 	  burgerButton = document.querySelector("#icon-bar"),
+		  listItem = document.getElementsByClassName("list-item");
 	let flag = true;
 	burgerButton.addEventListener('click', () => {
 		if (flag) {
 			menuHeight(menu, 300, 500);
 			flag = false;
+			listItem[0].classList.remove("hide");
+			listItem[1].classList.remove("hide");
+			listItem[2].classList.remove("hide");
+			listItem[3].classList.remove("hide");
+			listItem[4].classList.remove("hide");
+			listItem[5].classList.remove("hide");
+			listItem[6].classList.remove("hide");
 		} else {
 			menuHeight(menu, 0, 500);
+			listItem[0].classList.add("hide");
+			listItem[1].classList.add("hide");
+			listItem[2].classList.add("hide");
+			listItem[3].classList.add("hide");
+			listItem[4].classList.add("hide");
+			listItem[5].classList.add("hide");
+			listItem[6].classList.add("hide");
 			flag = true;
 		}
 	});

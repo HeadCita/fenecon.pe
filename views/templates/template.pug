@@ -10,50 +10,9 @@ html(lang="es")
         link(href="/css/font-awesome/css/font-awesome.min.css" rel="stylesheet")
         link(rel="stylesheet" href="/css/styles.css")
     body
-        header
-            .info-atencion
-                span.left info@global.car
-                span.left +51 94999999999
-                span.right Lun - Dom: 8am - 7pm
-            .menu-bar
-                .logo
-                    img(src="/img/logo/logo.png" alt="Logo de Global Car")
-                    .burguer
-                        span.fa.fa-bars#icon-bar
-                ul.menu-items
-                    li: a(href="/") Inicio
-                    li: a(href="/nosotros") Nosotros 
-                    li: a(href="/cursos/nuevos-ai") Cursos 
-                    li: a(href="/categorias/ai") Categorias 
-                    li: a(href="/galeria") Galeria 
-                    li: a(href="/contacto") Contacto
-            .banner-content
-                form.pre-inscripcion
-                    .form-header
-                        p Inscribete
-                    .form-body
-                        input(type="text" placeholder="Nombre" id="nombre")
-                        input(type="e-mail" placeholder="Email" id="email")
-                        input(type="text" placeholder="Telefono" id="telefono")
-                        select
-                            option(value="") Nuevos AI
-                            option(value="") Recategorizacion
-                            option(value="") Solo manejo
-                            option(value="") Manejo defensivo
-                            option(value="") Camioneta 4x4
-                        input(type="submit" value="Enviar")
-                img(src="/img/header/bg-headerOscurecido.jpg" class="banner-mobile")
-                .mensaje
-                    h3.bienvenida Bienvenido a Global Car
-                    h1 Aprende a <span>manejar</span> con nosotros
-                    p  Somos tu mejor opción para aprender a manejar todo tipo de vehículos <br>y obtener tu brevete de la manera mas rápida y sencilla.
-                    .botones
-                        a.reservar(href="#") Inscribirse
-                        a.ver-mas(href="#") Ver mas
-
 
         block content
-        .section-contact
+        .section-contact#locales
             h2 Ubicanos en cualquiera de nuestras oficinas!
             .hr
                 hr

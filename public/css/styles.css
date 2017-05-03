@@ -81,7 +81,7 @@ body {
 /* 1.1 ========Home========>*/
 /* 1.1.1 Mobile Burger-->*/
 
-header .info-atencion {
+.info-atencion {
     display: none;
 }
 
@@ -112,6 +112,10 @@ header .info-atencion {
     list-style: none;
     background-color: rgb(34, 34, 34);
     height: 0;
+}
+
+.hide {
+    display: none;
 }
 
 .menu-bar .menu-items li a {
@@ -1200,10 +1204,12 @@ section.category-description ul li:before{
         background-size: cover;
         height: 640px;
         background-position: center;
+        background-repeat: no-repeat;
         background-attachment: fixed;
+        overflow: hidden;
     }
 
-        header .info-atencion {
+        .info-atencion {
             width: 100%;
             color: #fff;
             margin: 0 auto;
@@ -1224,16 +1230,16 @@ section.category-description ul li:before{
             margin: 0 auto;
         }*/
 
-        header .info-atencion span {
+        .info-atencion span {
             padding: 10px 15px;
             display: inline-block;
         }
 
-        header .info-atencion .left {
+        .info-atencion .left {
             float: left;
         }
 
-        header .info-atencion .right {
+        .info-atencion .right {
             float: right;
         }
 
@@ -1241,7 +1247,12 @@ section.category-description ul li:before{
     .menu-bar {
         display: flex;
         justify-content: space-between;
-        margin-top: 1rem;
+        padding-top: 1rem;
+
+    }
+
+    .menu-bar.red {
+        background-color: rgba(166, 38, 32,1);
     }
 
     .menu-bar .burguer {
@@ -1264,6 +1275,7 @@ section.category-description ul li:before{
         display: flex;
         margin-right: 1rem; 
         background-color: initial;
+        height: 100%;
     }
 
     .menu-bar .menu-items li {
@@ -1331,7 +1343,7 @@ section.category-description ul li:before{
 
     .banner-content {
         width: 100%;
-        height: calc(100% - 3rem - 119px);
+        height: calc(100% - 3rem - 170px);
         position: relative;
     }
 
