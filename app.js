@@ -3,7 +3,7 @@
  */
 const express = require('express'), //framework
 	routes = require('./routes/page-router'), //router app
-	//favicon = require('serve-favicon'), //favicon
+	favicon = require('serve-favicon'), //favicon
 	publicDir = express.static(`${__dirname}/public`), //public folder
 	viewDir = `${__dirname}/views`,  //views folder
 	bodyParser = require('body-parser'),
@@ -17,7 +17,7 @@ app
 	.set('port', port)
 	.use(publicDir)
 	.use(bodyParser.urlencoded({extended:true}))
-	//.use(favicon)
+	.use(favicon(`${__dirname}/public/favicon.png`))
 	.use(routes);
 
 module.exports = app;
