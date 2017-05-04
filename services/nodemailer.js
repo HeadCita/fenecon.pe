@@ -12,10 +12,10 @@ let transporter = nodemailer.createTransport({
 
 function enviarMail(req, res, next) {
     let mailOptions = {
-        from: `Cliente: ${req.nombres}, ${req.apellidos}`,
+        from: `Cliente: ${req.body.nombres}, ${req.body.apellidos}`,
         to: 'leonus96@gmail.com',
         subject: 'Quiero información',
-        text: `Cliente: ${req.nombres}, ${req.apellidos}\n Email: ${req.email}\n ${req.mensaje}`
+        text: `Cliente:   ${req.body.nombres}, ${req.body.apellidos}\nEmail:   ${req.body.email}\n\n${req.body.mensaje}`
     };
 
     transporter.sendMail(mailOptions, (err, info)=>{
