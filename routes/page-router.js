@@ -6,6 +6,7 @@
 const PageController = require('../controllers/page-controller'),
 	express = require('express'),
 	router = express.Router(),
+	nodemailer = require('../services/nodemailer'),
 	pc = new PageController();
 
 router
@@ -27,5 +28,7 @@ router
 	.get('/locales', pc.getLocales)
 	.get('/contacto', pc.getContacto)
 	.get('/galeria', pc.getGaleria)
+
+	.post('/mail', nodemailer)
 
 module.exports = router;
