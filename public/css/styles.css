@@ -388,13 +388,31 @@ body {
     right: 10px;
 }
 
+/* 1.1.6 Section Bussines-->*/
+.section-bussines{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+}
+.section-bussines h2{    
+    color: #FFF;
+}
+.section-bussines .images-bussines{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-bussines .images-bussines img{
+    width: 120px;
+    padding: 15px;
+}
+
 /* 1.1.7 Section Contact-->*/
 .section-contact {
     display: flex;
     flex-direction: column;
     background: #E9EBEE;
     padding-bottom: 35px;
-    margin-top: 40px;
 }
 .section-contact h2{
     margin-top: 30px;
@@ -882,6 +900,12 @@ section.category-description ul li:before{
     .section-contact .contact-maps{
         margin-top: 60px;
     }
+
+    /* 2.1.6 Section Bussines-->*/
+    .section-bussines .images-bussines img{
+        width: 180px;
+    }
+
     /* 2.1.7 Section Contact-->*/
 
     /* 2.1.8 Footer-->*/
@@ -1064,6 +1088,19 @@ section.category-description ul li:before{
         font-size: 13px;
         line-height: 15px;
     }
+
+    /* 2.1.6 Section Bussines-->*/
+    .section-bussines{
+        padding-bottom: 40px;
+    }
+    .section-bussines .images-bussines img{
+        width: 200px;
+    }
+    .section-bussines .images-bussines{
+        max-width: 900px;
+        margin: auto;
+    }
+
     /* 3.1.7 Section: Contact-->*/
     .section-contact .contact-maps{
         flex-direction: row;
