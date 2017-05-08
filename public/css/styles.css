@@ -749,6 +749,17 @@ section.locales{
 /* 1.8======= Contact=========>*/
 .section-contact-email{
     margin-top: 30px;
+    padding-bottom: 30px;
+}
+.section-contact-email .title-contact-email{
+    padding-top: 30px ;
+}
+.section-contact-email .title-contact-email h2{
+    margin-bottom: 0;
+}
+.section-contact-email .title-contact-email .hr{
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 .section-contact-email form{
     padding: 2em 1em;
@@ -756,13 +767,14 @@ section.locales{
 .section-contact-email form .login-form-input{
     display: block;
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     border: none;
-    line-height: 2.5em;
+    line-height: 3em;
     padding: 0 1em;
     background: white;
     border-radius: 4px;
     border: 1px solid #941B11;
+    resize: vertical;
 }
 .section-contact-email form textarea.login-form-input{
     font-size: small;
@@ -1017,7 +1029,8 @@ section.category-description ul li:before{
     /* 2.6 ========Gallery========>*/
     .section-gallery .gallery-item{
         width: calc(50% - 2em);
-    }    
+    }
+    /* 2.8======= Contact=========>*/   
 
 }
 
@@ -1513,4 +1526,15 @@ section.category-description ul li:before{
     .section-gallery .gallery-item{
         width: calc(33.3% - 2em);
     }
+
+    /* 3.8======= Contact=========>*/
+    .section-contact-email form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .section-contact-email form #name{
+        width: 49%
+    }
+
 }
