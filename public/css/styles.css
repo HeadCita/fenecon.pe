@@ -1129,7 +1129,7 @@ section.category-description ul li:before{
         padding-bottom: 40px;
     }
     .section-bussines .images-bussines img{
-        width: 200px;
+        calc(25% - 30px);
     }
     .section-bussines .images-bussines{
         max-width: 900px;
