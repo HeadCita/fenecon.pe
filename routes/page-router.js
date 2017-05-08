@@ -29,6 +29,7 @@ router
 	.get('/contacto', pc.getContacto)
 	.get('/galeria', pc.getGaleria)
 
-	.post('/mail', nodemailer)
+	.post('/mail', nodemailer.enviarMail)
+	.post('/inscripcion', nodemailer.inscribirse);
 
 module.exports = router;
