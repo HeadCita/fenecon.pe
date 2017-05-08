@@ -27,6 +27,8 @@
         2.2 About US: description => (2.1.4)
         2.4 Categories
     3. Desktop/laptop
+        3.1 Home
+            3.1.7 Section Contact
  */
 
 * {
@@ -403,8 +405,8 @@ body {
     align-items: center;
 }
 .section-bussines .images-bussines img{
-    width: 120px;
-    padding: 15px;
+    flex-basis: calc(50% - 60px);
+    margin: 15px 30px;
 }
 
 /* 1.1.7 Section Contact-->*/
@@ -419,21 +421,18 @@ body {
 }
 .section-contact .contact-local{
     display: flex;
+    flex-direction: column;
     margin: 15px 0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-.section-contact .contact-local.reverse{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .section-contact .contact-local .local.title{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-basis: 25%;
     background: white;
+    height: 100px;
+    padding-top: 20px;/*Numero Mágico*/
 }
 
 .section-contact .contact-local .local.title h4{
@@ -477,7 +476,7 @@ body {
 }
 /* 1.1.8 Footer-->*/
 footer{
-    background: rgba(0, 0, 0, 1);
+    background: #191919;
     margin: 0px;
 }
     footer .footer-body p{
@@ -907,7 +906,8 @@ section.category-description ul li:before{
 
     /* 2.1.6 Section Bussines-->*/
     .section-bussines .images-bussines img{
-        width: 180px;
+        flex-basis: calc(25% - 80px);
+        margin: 15px 40px;
     }
 
     /* 2.1.7 Section Contact-->*/
@@ -1106,13 +1106,18 @@ section.category-description ul li:before{
     }
 
     /* 3.1.7 Section: Contact-->*/
-    .section-contact .contact-maps{
+    .section-contact .contact-local {
         flex-direction: row;
-        justify-content: space-between;
     }
-    .section-contact .contact-maps .map-item{
-        width: 45%;
+
+    .section-contact .contact-local .local.title{
+        height: auto;
+        flex-basis: 25%;
     }
+    .section-contact .contact-local.reverse{
+        flex-direction: row-reverse;
+    }
+
     /* 2.1.8 Footer-->*/
     footer .footer-body{
         display: flex;
