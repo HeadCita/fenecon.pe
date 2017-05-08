@@ -1128,12 +1128,14 @@ section.category-description ul li:before{
     .section-bussines{
         padding-bottom: 40px;
     }
-    .section-bussines .images-bussines img{
-        calc(25% - 30px);
-    }
+
     .section-bussines .images-bussines{
         max-width: 900px;
-        margin: auto;
+        margin:  0 auto;
+    }
+    .section-bussines .images-bussines img{
+        width: calc(25% - 80px);
+        margin: 15px 40px;
     }
 
     /* 3.1.7 Section: Contact-->*/
