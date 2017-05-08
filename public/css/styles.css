@@ -1096,7 +1096,7 @@ section.category-description ul li:before{
     }
     .section-description .description-features .feature-card .img-card{
         display: flex;
-        flex-basis: calc(33.3% - 30px);
+        flex-basis: calc(25% - 30px);
         justify-content: center;
         align-content: center;
     }    
