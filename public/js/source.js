@@ -51,7 +51,7 @@
 	}
 
 	function testimonyAutoplay(){
-		setInterval(testimonyRigth, 3000)
+		setInterval(testimonyRigth, 7000)
 	}
 
 	testimonyAutoplay();

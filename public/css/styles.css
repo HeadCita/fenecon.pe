@@ -303,18 +303,24 @@ body {
 
 .section-testimony .slider .section .testimony-textbox{
     background: transparent;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.section-testimony .slider .section .testimony-textbox .fa.fa-quote-left{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-right: 15px;
+}
 .section-testimony .slider .section .testimony-textbox p{
     color: white;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 12px;
+    text-align: left;
+    line-height: 20px;
 }
 
 .section-testimony .slider .section .bubble{
@@ -322,6 +328,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .section-testimony .slider .section .bubble .fa-circle{
     color: #EFB317;
@@ -364,6 +371,12 @@ body {
     border-color:  #EFB317;
 }
 
+.section-testimony .slider .section.focus .bubble{
+    visibility: hidden;
+}
+.section-testimony{
+    display: none;
+}
 #btn-prev, #btn-next{
     width: 40px;
     height: 40px;
@@ -874,7 +887,7 @@ section.category-description ul li:before{
     .section-description .description-features .feature-img{
         padding: 0px;
     }
-    
+
     /* 2.1.5 Section: Testimony-->*/
     .section-testimony .slide ul li .testimony-textbox{
         width: 400px;
@@ -1093,7 +1106,12 @@ section.category-description ul li:before{
         line-height: 15px;
     }
 
-    /* 2.1.6 Section Bussines-->*/
+    /* 3.1.5 Section Testimony-->*/
+    .section-testimony{
+        display: block;
+    }
+
+    /* 3.1.6 Section Bussines-->*/
     .section-bussines{
         padding-bottom: 40px;
     }
