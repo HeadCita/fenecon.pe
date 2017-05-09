@@ -418,8 +418,8 @@ body {
     align-items: center;
 }
 .section-bussines .images-bussines img{
-    flex-basis: calc(50% - 60px);
-    margin: 15px 30px;
+    width:  calc(50% - 80px);
+    margin: 10px 40px;
 }
 
 /* 1.1.7 Section Contact-->*/
@@ -931,8 +931,8 @@ section.category-description ul li:before{
 
     /* 2.1.6 Section Bussines-->*/
     .section-bussines .images-bussines img{
-        flex-basis: calc(25% - 80px);
-        margin: 15px 40px;
+        width: calc(25% - 50px);
+        margin: 15px 25px;
     }
 
     /* 2.1.7 Section Contact-->*/
