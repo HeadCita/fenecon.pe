@@ -1471,7 +1471,7 @@ section.category-description ul li:before{
     .menu-bar .menu-items li:hover > a:before {
         opacity: 1;
         width: 40%;
-         border-radius: inherit;
+        border-radius: inherit;
     }
 
     /*.list-item .sub-menu {
@@ -1491,11 +1491,11 @@ section.category-description ul li:before{
         z-index: 99;
         height: initial;
         width: 180px;
-        background-color: #fff;
+        background-color: #222;
     }
 
     .sub-menu .sub-menu__item .sub-item__link {
-        color: rgb(240, 181, 51);
+        color: #fff;
     }
 
     .sub-menu .sub-menu__item {
@@ -1506,16 +1506,22 @@ section.category-description ul li:before{
     }
 
     .sub-menu .sub-menu__item:hover {
-        border-bottom: 2px solid rgba(166, 38, 32,.7);
+        border-bottom: 2px solid rgb(240, 181, 51);
     }    
 
     .sub-menu .sub-menu__item:hover .sub-item__link {
-        color: rgba(166, 38, 32,.7);
+        color: rgb(240, 181, 51);
     }
 
     /*.sub-menu {
         top: -1000px;
     }*/
+
+    .sub-menu .sub-menu__item:hover > a:before,
+    .sub-menu .sub-menu__item:hover > a::after {
+        background-color: #222;
+    }
+
 
     
 
