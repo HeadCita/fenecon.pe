@@ -3,19 +3,19 @@ block content
     header.home
         include menu.pug
         .banner-content
-            form.pre-inscripcion
+            form.pre-inscripcion(method='POST' action='/inscripcion')
                 .form-header
                     p Inscribete
                 .form-body
-                    input(type="text" placeholder="Nombre" id="nombre")
-                    input(type="e-mail" placeholder="Email" id="email")
-                    input(type="text" placeholder="Telefono" id="telefono")
-                    select
-                        option(value="") Nuevos AI
-                        option(value="") Recategorizacion
-                        option(value="") Solo manejo
-                        option(value="") Manejo defensivo
-                        option(value="") Camioneta 4x4
+                    input(type="text" placeholder="Nombre" id="nombre" name="nombres")
+                    input(type="e-mail" placeholder="Email" id="email" name="email")
+                    input(type="text" placeholder="Telefono" id="telefono"  name="telefono")
+                    select(name="curso")
+                        option(value="Nuevos AI") Nuevos AI
+                        option(value="Recategorizacion") Recategorizacion
+                        option(value="Solo manejo") Solo manejo
+                        option(value="Manejo defensivo") Manejo defensivo
+                        option(value="Camioneta 4x4") Camioneta 4x4
                     input(type="submit" value="Enviar")
             img(src="/img/header/bg-headerOscurecido.jpg" class="banner-mobile")
             .mensaje

@@ -51,10 +51,28 @@
 	}
 
 	function testimonyAutoplay(){
-		setInterval(testimonyRigth, 3000)
+		setInterval(testimonyRigth, 7000)
 	}
 
 	testimonyAutoplay();
+
+	//Mapa no-scroll
+	const mapContainers = Array.prototype.slice.apply(document.querySelectorAll('.contact-local .local.map'));		;
+	const maps = Array.prototype.slice.apply(document.querySelectorAll('.contact-local .local.map iframe'));
+	console.log(mapContainers);
+	mapContainers[0].addEventListener('click', () => {
+		maps[0].style.pointerEvents = 'auto';
+	});
+	mapContainers[0].addEventListener('mouseleave', () => {
+		maps[0].style.pointerEvents = 'none';
+	});
+
+	mapContainers[1].addEventListener('click', () => {
+		maps[1].style.pointerEvents = 'auto';
+	});
+	mapContainers[1].addEventListener('mouseleave', () => {
+		maps[1].style.pointerEvents = 'none';
+	});
 
 /*	next.addEventListener('click', ()=>{
 		testimonyRigth();
