@@ -102,7 +102,7 @@ body {
 /* 1.1.2 Menu-->*/
 .menu-bar .logo {
     width: 100%;
-    background-color: rgb(34, 34, 34);
+    background-color: rgba(166, 38, 32,1);
     padding: 5px 1rem;
 }
 
@@ -112,7 +112,8 @@ body {
 
 .menu-bar .menu-items {
     list-style: none;
-    background-color: rgb(34, 34, 34);
+    background-color: rgba(166, 38, 32,1);
+    border-left: 4px solid rgb(240, 181, 51);
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s ease-in-out;
@@ -149,10 +150,15 @@ body {
     top: 15%;
     left: -100%;
     list-style: none;
-    background-color: #222;
-    width: 40%;
+    background-color: rgba(166, 38, 32,1);
+    width: 60%;
     height: 70%;
+    border-right: 4px solid rgba(240, 181, 51,.8);
     transition: left 0.5s;
+}
+
+.menu-bar.red .menu-items .sub-menu {
+    height: 53.5%;
 }
 
 /* 1.1.3 Banner-->*/
@@ -1412,6 +1418,7 @@ section.category-description ul li:before{
         display: flex;
         margin-right: 1rem; 
         background-color: initial;
+        border: none;
         max-height: 1000px;
         padding: 1rem 0;
         overflow: visible;
@@ -1492,6 +1499,7 @@ section.category-description ul li:before{
         height: initial;
         width: 180px;
         background-color: #222;
+        border: none;
     }
 
     .sub-menu .sub-menu__item .sub-item__link {

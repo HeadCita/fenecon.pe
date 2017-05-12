@@ -74,10 +74,10 @@
 			
 			if (flagSubMenu) {
 				subMenu1.style.left = 0;
-				linkCursos.style.backgroundColor = "#3a3838";
+				linkCursos.style.backgroundColor = "#8e1a15";
 				flagSubMenu = false;
 			} else {
-				linkCursos.style.backgroundColor = "rgb(34, 34, 34)";
+				linkCursos.style.backgroundColor = "rgb(166, 38, 32)";
 				subMenu1.style.left = '-100%';
 				flagSubMenu = true;
 			}
@@ -87,11 +87,11 @@
 		linkCategorias.addEventListener('click', () => {
 			
 			if (flagSubMenu2) {
-				linkCategorias.style.backgroundColor = "#3a3838";
+				linkCategorias.style.backgroundColor = "#8e1a15";
 				subMenu2.style.left = 0;
 				flagSubMenu2 = false;
 			} else {
-				linkCategorias.style.backgroundColor = "rgb(34, 34, 34)";
+				linkCategorias.style.backgroundColor = "rgb(166, 38, 32)";
 				subMenu2.style.left = '-100%';
 				flagSubMenu2 = true;
 			}
