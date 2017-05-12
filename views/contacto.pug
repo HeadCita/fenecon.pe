@@ -1,6 +1,8 @@
 extends templates/template
 block content
-    include menu-rojo.pug
+    header.no-banner
+        include menu-rojo.pug
+
     .section-contact-email.container
         form(action='/mail' method='POST')
             input.login-form-input(type='text' name='nombres' placeholder='Nombres' required='true')

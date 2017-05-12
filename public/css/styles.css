@@ -111,7 +111,9 @@ body {
 .menu-bar .menu-items {
     list-style: none;
     background-color: rgb(34, 34, 34);
-    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
 }
 
 .hide {
@@ -139,6 +141,17 @@ body {
     display: block;
 }
 
+
+.list-item .sub-menu {
+    position: absolute;
+    top: 15%;
+    left: -100%;
+    list-style: none;
+    background-color: #222;
+    width: 40%;
+    height: 70%;
+    transition: left 0.5s;
+}
 
 /* 1.1.3 Banner-->*/
 
@@ -1245,7 +1258,7 @@ section.category-description ul li:before{
 
     /* 3.5 ========Header========>*/
 
-    header {
+    header.home {
         background: url("/img/header/bg-headerOscurecido.jpg");
         width: 100%;
         background-size: cover;
@@ -1256,6 +1269,15 @@ section.category-description ul li:before{
         overflow: hidden;
     }
 
+    header.no-banner {
+        background: url("/img/header/bgRed-headerOscurecido.jpg");
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
         .info-atencion {
             width: 100%;
             color: #fff;
@@ -1263,6 +1285,10 @@ section.category-description ul li:before{
             height: 3rem;
             display: block;
             background-color: rgba(166, 38, 32,1);
+        }
+
+        header.no-banner .info-atencion{
+            background-color: rgba(166, 38, 32,.7);
         }
 
         /*header .info-atencion:after {
@@ -1278,7 +1304,8 @@ section.category-description ul li:before{
         }*/
 
         .info-atencion span {
-            padding: 10px 15px;
+            padding: 0px 15px;
+            line-height: 3rem;
             display: inline-block;
         }
 
@@ -1294,12 +1321,16 @@ section.category-description ul li:before{
     .menu-bar {
         display: flex;
         justify-content: space-between;
-        padding-top: 1rem;
-
+        padding-top: 0.5rem;
+        align-items: center;
     }
 
     .menu-bar.red {
-        background-color: rgba(166, 38, 32,1);
+        padding-bottom: 1rem;
+    }
+
+    header.no-banner .menu-bar.red {
+        background-color: rgba(166, 38, 32,.7);
     }
 
     .menu-bar .burguer {
@@ -1322,20 +1353,24 @@ section.category-description ul li:before{
         display: flex;
         margin-right: 1rem; 
         background-color: initial;
-        height: 100%;
+        max-height: 1000px;
+        padding: 1rem 0;
+        overflow: visible;
     }
 
     .menu-bar .menu-items li {
-        margin-right: 20px;
+        /*margin-right: 20px;*/
+        /*line-height: 150px;*/
+        position: relative;
     }
 
     .menu-bar .menu-items li a {
-        display: inline;
-        padding: 0;
+        display: block;
+        padding: 1rem 0.5rem;
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
-        line-height: 100px;
+        
         position: relative;
        
     }
@@ -1378,6 +1413,56 @@ section.category-description ul li:before{
         opacity: 1;
         width: 40%;
          border-radius: inherit;
+    }
+
+    /*.list-item .sub-menu {
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+    }*/
+
+
+    .menu-items li .sub-menu {
+        position: absolute;
+        list-style: none;
+        left: 0;
+        top: 100%;
+        z-index: 99;
+        height: initial;
+        width: 180px;
+        background-color: #fff;
+    }
+
+    .sub-menu .sub-menu__item .sub-item__link {
+        color: rgb(240, 181, 51);
+    }
+
+    .sub-menu .sub-menu__item {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s;
+        /*border-bottom: 2px solid transparent;*/
+    }
+
+    .sub-menu .sub-menu__item:hover {
+        border-bottom: 2px solid rgba(166, 38, 32,.7);
+    }    
+
+    .sub-menu .sub-menu__item:hover .sub-item__link {
+        color: rgba(166, 38, 32,.7);
+    }
+
+    /*.sub-menu {
+        top: -1000px;
+    }*/
+
+    
+
+    .list-item:hover > .sub-menu > .sub-menu__item {
+        max-height: 1000px;
+        overflow: visible;
     }
 
     .banner-content .banner-mobile {
@@ -1433,7 +1518,7 @@ section.category-description ul li:before{
         text-align: center;
         background-color: rgba(192, 192, 192, 0.4);
         position: absolute;
-        top: 15%;
+        top: 2.5%;
         margin-left: 2rem;
         border-radius: 4px;
     }
