@@ -44,6 +44,11 @@
 			menu.style.maxHeight = 0;
 			// menuHeight(menu, 0, 500);
 			flag = true;
+			subMenuCursos.removeAttribute("style");
+			subMenuCategorias.removeAttribute("style");
+			linkCursos.removeAttribute("style");
+			linkCategorias.removeAttribute("style");
+			menuItems.removeAttribute("style");
 		}
 	});
 
@@ -64,13 +69,21 @@
 	let subMenu1 = subMenuChild(linkCursos);
 	let subMenu2 = subMenuChild(linkCategorias);
 
+	const menuItems = document.getElementById("menu-items"),
+		subMenuCursos = document.getElementById("sub-menuCursos"),
+		subMenuCategorias = document.getElementById("sub-menuCategorias");
+
 	let mq = window.matchMedia( "(min-width: 1000px)" );
 	if(!mq.matches) {
-		menu.style.maxHeight = "0px";
+		// menu.style.maxHeight = "0px";
+		subMenuCursos.removeAttribute("style");
+		subMenuCategorias.removeAttribute("style");
+		menuItems.removeAttribute("style");
 
 		let flagSubMenu = true;
 		linkCursos.addEventListener('click', () => {
-		console.log("prueba");
+		// console.log("prueba");
+			// menuItems.removeAttribute("style");
 			
 			if (flagSubMenu) {
 				subMenu1.style.left = 0;
@@ -81,6 +94,7 @@
 				subMenu1.style.left = '-100%';
 				flagSubMenu = true;
 			}
+			// menuItems.removeAttribute("style");
 		});
 
 		let flagSubMenu2 = true;
@@ -95,13 +109,18 @@
 				subMenu2.style.left = '-100%';
 				flagSubMenu2 = true;
 			}
+			// menuItems.removeAttribute("style");
 		});
 
 	} else {
 		console.log(mq.matches);
+		
 		subMenu1.style.left = "0";
 		subMenu2.style.left = "0";
 		menu.style.maxHeight = "1000px";
+		subMenuCursos.removeAttribute("style");
+		subMenuCategorias.removeAttribute("style");
+		menuItems.removeAttribute("style");
 	}
 
 

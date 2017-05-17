@@ -7,18 +7,18 @@
         img(src="/img/logo/logo.png" alt="Logo de Global Car")
         .burguer
             span.fa.fa-bars#icon-bar
-    ul.menu-items
+    ul.menu-items#menu-items
         li.list-item: a(href="/") Inicio
         li.list-item: a(href="/nosotros") Nosotros 
         li.list-item.cursos
             a.list-item__link(href="#") Cursos
-            ul.sub-menu
+            ul.sub-menu#sub-menuCursos
                 li.sub-menu__item: a.sub-item__link(href="/cursos/nuevos-ai") Nuevos AI
                 li.sub-menu__item: a.sub-item__link(href="/cursos/recategorizacion") Recategorizacion
                 li.sub-menu__item: a.sub-item__link(href="/cursos/solo-manejo") Solo manejo
                 li.sub-menu__item: a.sub-item__link(href="/cursos/manejo-defensivo") Manejo defensivo
                 li.sub-menu__item: a.sub-item__link(href="/cursos/camioneta") Camioneta 4x4
-        li.list-item.categorias
+        li.list-item.categorias#sub-menuCategorias
             a.list-item__link(href="#") Categorias
             ul.sub-menu
                 li.sub-menu__item: a.sub-item__link(href="/categorias/ai") AI
