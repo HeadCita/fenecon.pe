@@ -1,20 +1,17 @@
 {
-  "name": "globalcar.pe",
+  "name": "fenecon.pe",
   "version": "1.0.0",
-  "description": "Website de la escuela de conductores Global Car SAC.",
-  "main": "server.js",
+  "description": "Website FENECON",
+  "main": "fenecon.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "supervisor $NODE_DEBUG_OPTION global.js"
+    "start": "supervisor $NODE_DEBUG_OPTION fenecon.js"
   },
   "author": "HeadCita",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "nodemailer": "^4.0.1",
-    "pug": "^2.0.0-beta11",
-    "serve-favicon": "^2.4.2"
+    "pug": "^2.0.0-beta11"
   },
   "devDependencies": {
     "supervisor": "^0.12.0"

@@ -3,33 +3,11 @@
  */
 "use strict";
 
-const PageController = require('../controllers/page-controller'),
-	express = require('express'),
-	router = express.Router(),
-	nodemailer = require('../services/nodemailer'),
-	pc = new PageController();
+const express = require('express'),
+	router = express.Router();
 
 router
-	.get('/', pc.getHome)
-	.get('/nosotros', pc.getUs)
-	//--COURSES--->
-	.get('/cursos/nuevos-ai', pc.getCursoNuevoAi)
-	.get('/cursos/recategorizacion', pc.getCursoRecategorizacion)
-	.get('/cursos/solo-manejo', pc.getCursoSoloManejo)
-	.get('/cursos/manejo-defensivo', pc.getCursoManejoDefensivo)
-	.get('/cursos/camioneta', pc.getCursoCamioneta)
-	//--CATEGORIES--->
-	.get('/categorias/ai', pc.getCategoryAi)
-	.get('/categorias/aiia', pc.getCategoryAiia)
-	.get('/categorias/aiib', pc.getCategoryAiib)
-	.get('/categorias/aiiia', pc.getCategoryAiiia)
-	.get('/categorias/aiiib', pc.getCategoryAiiib)
-	.get('/categorias/aiiic', pc.getCategoryAiiic)
-	.get('/locales', pc.getLocales)
-	.get('/contacto', pc.getContacto)
-	.get('/galeria', pc.getGaleria)
-
-	.post('/mail', nodemailer.enviarMail)
-	.post('/inscripcion', nodemailer.inscribirse);
-
+	.get('/', (req, res, next)=>{
+		res.render('home');
+	});
 module.exports = router;
