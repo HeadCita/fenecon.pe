@@ -5,7 +5,7 @@ const express = require('express'), //framework
 	routes = require('./routes/page-router'), //router app
 	publicDir = express.static(`${__dirname}/public`), //public folder
 	viewDir = `${__dirname}/views`,  //views folder
-	port = (process.env.PORT || 3000); //port (http://IP:port)
+	port = (process.env.PORT || 3001); //port (http://IP:port)
 
 let app = express(); //instance of app Express;
 
